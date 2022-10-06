@@ -1,13 +1,13 @@
 //
-//  IN_SOPT_First_AssignmentUITestsLaunchTests.swift
-//  IN_SOPT_First_AssignmentUITests
+//  IN_SOPT_First_Challenge_AssignmentUITestsLaunchTests.swift
+//  IN_SOPT_First_Challenge_AssignmentUITests
 //
-//  Created by 류희재 on 2022/10/05.
+//  Created by 류희재 on 2022/10/06.
 //
 
 import XCTest
 
-final class IN_SOPT_First_AssignmentUITestsLaunchTests: XCTestCase {
+final class IN_SOPT_First_Challenge_AssignmentUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

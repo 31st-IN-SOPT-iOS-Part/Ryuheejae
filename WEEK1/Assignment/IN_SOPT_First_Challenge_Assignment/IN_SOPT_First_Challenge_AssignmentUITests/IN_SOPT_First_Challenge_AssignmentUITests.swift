@@ -1,13 +1,13 @@
 //
-//  IN_SOPT_First_AssignmentUITests.swift
-//  IN_SOPT_First_AssignmentUITests
+//  IN_SOPT_First_Challenge_AssignmentUITests.swift
+//  IN_SOPT_First_Challenge_AssignmentUITests
 //
-//  Created by 류희재 on 2022/10/05.
+//  Created by 류희재 on 2022/10/06.
 //
 
 import XCTest
 
-final class IN_SOPT_First_AssignmentUITests: XCTestCase {
+final class IN_SOPT_First_Challenge_AssignmentUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

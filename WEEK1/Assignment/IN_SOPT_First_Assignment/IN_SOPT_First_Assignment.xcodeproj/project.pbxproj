@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D202FC7628ED513D00ADC3D7 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D202FC7528ED513D00ADC3D7 /* ThirdViewController.swift */; };
+		D202FC7628ED513D00ADC3D7 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D202FC7528ED513D00ADC3D7 /* WelcomeView.swift */; };
 		D243DB9928ED34F000AEA6EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D243DB9828ED34F000AEA6EE /* AppDelegate.swift */; };
 		D243DB9B28ED34F000AEA6EE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D243DB9A28ED34F000AEA6EE /* SceneDelegate.swift */; };
-		D243DB9D28ED34F000AEA6EE /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D243DB9C28ED34F000AEA6EE /* FirstViewController.swift */; };
+		D243DB9D28ED34F000AEA6EE /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D243DB9C28ED34F000AEA6EE /* SignInView.swift */; };
 		D243DBA028ED34F000AEA6EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D243DB9E28ED34F000AEA6EE /* Main.storyboard */; };
 		D243DBA328ED34F000AEA6EE /* IN_SOPT_First_Assignment.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D243DBA128ED34F000AEA6EE /* IN_SOPT_First_Assignment.xcdatamodeld */; };
 		D243DBA528ED34F100AEA6EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D243DBA428ED34F100AEA6EE /* Assets.xcassets */; };
@@ -18,7 +18,7 @@
 		D243DBB328ED34F100AEA6EE /* IN_SOPT_First_AssignmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D243DBB228ED34F100AEA6EE /* IN_SOPT_First_AssignmentTests.swift */; };
 		D243DBBD28ED34F100AEA6EE /* IN_SOPT_First_AssignmentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D243DBBC28ED34F100AEA6EE /* IN_SOPT_First_AssignmentUITests.swift */; };
 		D243DBBF28ED34F100AEA6EE /* IN_SOPT_First_AssignmentUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D243DBBE28ED34F100AEA6EE /* IN_SOPT_First_AssignmentUITestsLaunchTests.swift */; };
-		D243DBCC28ED4DD900AEA6EE /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D243DBCB28ED4DD900AEA6EE /* SecondViewController.swift */; };
+		D243DBCC28ED4DD900AEA6EE /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D243DBCB28ED4DD900AEA6EE /* SignUpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,11 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D202FC7528ED513D00ADC3D7 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		D202FC7528ED513D00ADC3D7 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		D243DB9528ED34F000AEA6EE /* IN_SOPT_First_Assignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IN_SOPT_First_Assignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D243DB9828ED34F000AEA6EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D243DB9A28ED34F000AEA6EE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D243DB9C28ED34F000AEA6EE /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		D243DB9C28ED34F000AEA6EE /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		D243DB9F28ED34F000AEA6EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D243DBA228ED34F000AEA6EE /* IN_SOPT_First_Assignment.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IN_SOPT_First_Assignment.xcdatamodel; sourceTree = "<group>"; };
 		D243DBA428ED34F100AEA6EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -54,7 +54,7 @@
 		D243DBB828ED34F100AEA6EE /* IN_SOPT_First_AssignmentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IN_SOPT_First_AssignmentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D243DBBC28ED34F100AEA6EE /* IN_SOPT_First_AssignmentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IN_SOPT_First_AssignmentUITests.swift; sourceTree = "<group>"; };
 		D243DBBE28ED34F100AEA6EE /* IN_SOPT_First_AssignmentUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IN_SOPT_First_AssignmentUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		D243DBCB28ED4DD900AEA6EE /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		D243DBCB28ED4DD900AEA6EE /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,14 +107,14 @@
 			children = (
 				D243DB9828ED34F000AEA6EE /* AppDelegate.swift */,
 				D243DB9A28ED34F000AEA6EE /* SceneDelegate.swift */,
-				D243DB9C28ED34F000AEA6EE /* FirstViewController.swift */,
+				D243DB9C28ED34F000AEA6EE /* SignInView.swift */,
 				D243DB9E28ED34F000AEA6EE /* Main.storyboard */,
 				D243DBA428ED34F100AEA6EE /* Assets.xcassets */,
 				D243DBA628ED34F100AEA6EE /* LaunchScreen.storyboard */,
 				D243DBA928ED34F100AEA6EE /* Info.plist */,
 				D243DBA128ED34F000AEA6EE /* IN_SOPT_First_Assignment.xcdatamodeld */,
-				D243DBCB28ED4DD900AEA6EE /* SecondViewController.swift */,
-				D202FC7528ED513D00ADC3D7 /* ThirdViewController.swift */,
+				D243DBCB28ED4DD900AEA6EE /* SignUpView.swift */,
+				D202FC7528ED513D00ADC3D7 /* WelcomeView.swift */,
 			);
 			path = IN_SOPT_First_Assignment;
 			sourceTree = "<group>";
@@ -268,10 +268,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D243DBA328ED34F000AEA6EE /* IN_SOPT_First_Assignment.xcdatamodeld in Sources */,
-				D243DB9D28ED34F000AEA6EE /* FirstViewController.swift in Sources */,
+				D243DB9D28ED34F000AEA6EE /* SignInView.swift in Sources */,
 				D243DB9928ED34F000AEA6EE /* AppDelegate.swift in Sources */,
-				D243DBCC28ED4DD900AEA6EE /* SecondViewController.swift in Sources */,
-				D202FC7628ED513D00ADC3D7 /* ThirdViewController.swift in Sources */,
+				D243DBCC28ED4DD900AEA6EE /* SignUpView.swift in Sources */,
+				D202FC7628ED513D00ADC3D7 /* WelcomeView.swift in Sources */,
 				D243DB9B28ED34F000AEA6EE /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

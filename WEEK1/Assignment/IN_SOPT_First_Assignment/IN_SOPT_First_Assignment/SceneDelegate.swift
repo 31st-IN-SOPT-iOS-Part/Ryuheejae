@@ -23,7 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 let window = UIWindow(windowScene: windowScene)
                 window.overrideUserInterfaceStyle = UIUserInterfaceStyle.light
                 
-                let rootVC = FirstViewController()
+                let rootVC = SignInView()
                 // 스택 형태의 컨테이너 뷰 컨트롤러
                 
                 let navigationController = UINavigationController(rootViewController: rootVC)

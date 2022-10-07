@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class SignUpView: UIViewController {
     private let startLabel: UILabel = {
         let label = UILabel(frame: CGRect(x: UIScreen.main.bounds.size.width/2-125, y: 50, width: 250, height: 200))
         label.text = "카카오톡을 시작합니다"
@@ -83,7 +83,7 @@ class SecondViewController: UIViewController {
     
     
     private func presentToThirdVC(){
-        let thirdVC = ThirdViewController()
+        let thirdVC = WelcomeView()
         thirdVC.modalPresentationStyle = .formSheet
         self.present(thirdVC,animated: true,completion: nil)
         if let email = emailTextfield.text{

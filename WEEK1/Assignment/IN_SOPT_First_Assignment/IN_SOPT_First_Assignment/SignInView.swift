@@ -6,7 +6,7 @@
 //
 import UIKit
 
-class FirstViewController: UIViewController {
+class SignInView: UIViewController {
 
     private let startLabel: UILabel = {
         let label = UILabel(frame: CGRect(x: UIScreen.main.bounds.size.width/2-125, y: 50, width: 250, height: 200))
@@ -97,7 +97,7 @@ class FirstViewController: UIViewController {
     }
 
     private func presentToThirdVC(){
-        let thirdVC = ThirdViewController()
+        let thirdVC = WelcomeView()
         
         thirdVC.modalPresentationStyle = .formSheet
         self.present(thirdVC,animated: true,completion: nil)
@@ -108,7 +108,7 @@ class FirstViewController: UIViewController {
     }
     
     private func pushToSecondVC() {
-        let secondVC = SecondViewController()
+        let secondVC = SignUpView()
         self.navigationController?.pushViewController(secondVC, animated: true)
     }
     

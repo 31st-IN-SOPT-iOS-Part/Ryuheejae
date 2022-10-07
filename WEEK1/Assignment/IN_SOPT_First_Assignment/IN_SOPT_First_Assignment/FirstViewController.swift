@@ -4,7 +4,6 @@
 //
 //  Created by 류희재 on 2022/10/05.
 //
-
 import UIKit
 
 class FirstViewController: UIViewController {
@@ -123,4 +122,3 @@ class FirstViewController: UIViewController {
         pushToSecondVC()
     }
 }
-

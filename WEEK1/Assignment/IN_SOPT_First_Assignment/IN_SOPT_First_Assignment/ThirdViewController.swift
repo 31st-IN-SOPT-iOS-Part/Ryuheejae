@@ -17,7 +17,7 @@ class ThirdViewController: UIViewController {
         return label
     }()
     
-    private let checkButton: UIButton = {
+    private lazy var checkButton: UIButton = {
         let button = UIButton(frame: CGRect(x: 20, y: 530, width: UIScreen.main.bounds.size.width - 40, height: 50))
         button.setTitle("확인", for: .normal)
         button.setTitleColor(.black, for: .normal)
@@ -38,6 +38,10 @@ class ThirdViewController: UIViewController {
         view.addSubview(checkButton)
         
     }
+    func dataBind(){
+        guard let result = self.result else {return}
+        nameLabel.text = "\(result)님"
+    }
     
     func dataBind(result:String){
         nameLabel.text = "\(result)님"
@@ -50,7 +54,7 @@ class ThirdViewController: UIViewController {
         if self.navigationController == nil{
             self.dismiss(animated: true) {
                 presentingVC.popToRootViewController(animated: false)
-        }
+            }
         }
     }
 }

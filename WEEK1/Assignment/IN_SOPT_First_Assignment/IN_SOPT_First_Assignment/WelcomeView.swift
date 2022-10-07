@@ -1,6 +1,6 @@
 import UIKit
 
-class ThirdViewController: UIViewController {
+class WelcomeView: UIViewController {
     private let nameLabel: UILabel = {
         let label = UILabel(frame: CGRect(x: UIScreen.main.bounds.size.width/2-125, y: 200, width: 250, height: 100))
         label.text = "OOO님"

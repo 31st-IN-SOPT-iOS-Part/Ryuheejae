@@ -1,16 +1,22 @@
 import UIKit
 import SnapKit
+
+// MARK: - SignUpViewController extension
 extension SignUpViewController {
+
+    // MARK: - layout func
     private func layout(){
         [startLabel,emailTextField,emailLine,passwordTextField,passwordLine,signUpButton,checkPasswordLine,checkPasswordTextField].forEach{
             view.addSubview($0)
         }
         
+        // MARK: - startLabel AutoLayout
         startLabel.snp.makeConstraints{ make in
             make.top.equalTo(self.view.safeAreaLayoutGuide).offset(40)
             make.leading.equalTo(self.view.safeAreaLayoutGuide).offset(89)
         }
         
+        // MARK: - emailTextField AutoLayout
         emailTextField.snp.makeConstraints{ make in
             make.top.equalTo(self.startLabel).offset(119)
             make.leading.equalTo(self.view.safeAreaLayoutGuide).offset(21)
@@ -18,6 +24,7 @@ extension SignUpViewController {
             make.height.equalTo(49)
         }
         
+        // MARK: - emailLine AutoLayout
         emailLine.snp.makeConstraints{ make in
             make.top.equalTo(self.emailTextField.snp.bottom)
             make.leading.equalTo(self.emailTextField)
@@ -25,6 +32,7 @@ extension SignUpViewController {
             make.height.equalTo(1)
         }
         
+        // MARK: - passwordTextField AutoLayout
         passwordTextField.snp.makeConstraints{ make in
             make.top.equalTo(self.emailLine).offset(10)
             make.leading.equalTo(self.view.safeAreaLayoutGuide).offset(21)
@@ -32,6 +40,7 @@ extension SignUpViewController {
             make.height.equalTo(49)
         }
         
+        // MARK: - passwordLine AutoLayout
         passwordLine.snp.makeConstraints{ make in
             make.top.equalTo(self.passwordTextField.snp.bottom)
             make.leading.equalTo(self.passwordTextField)
@@ -39,6 +48,7 @@ extension SignUpViewController {
             make.height.equalTo(1)
         }
         
+        // MARK: - checkPasswordTextField AutoLayout
         checkPasswordTextField.snp.makeConstraints{ make in
             make.top.equalTo(self.passwordLine).offset(10)
             make.leading.equalTo(self.view.safeAreaLayoutGuide).offset(21)
@@ -47,6 +57,7 @@ extension SignUpViewController {
             
         }
         
+        // MARK: - checkPasswordLine AutoLayout
         checkPasswordLine.snp.makeConstraints{ make in
             make.top.equalTo(self.checkPasswordTextField.snp.bottom)
             make.leading.equalTo(self.checkPasswordTextField)
@@ -55,6 +66,7 @@ extension SignUpViewController {
             
         }
         
+        // MARK: - signUpButton AutoLayout
         signUpButton.snp.makeConstraints{ make in
             make.top.equalTo(self.checkPasswordLine.snp.bottom).offset(26)
             make.leading.equalTo(self.emailTextField)
@@ -63,8 +75,12 @@ extension SignUpViewController {
         }
     }
 }
+
+// MARK: - SignUpViewController class
 class SignUpViewController: UIViewController {
-    private let startLabel: UILabel = {
+    
+    // MARK: - startLabel
+    private let startLabel : UILabel = {
         let label = UILabel()
         label.text = "카카오톡을 시작합니다"
         label.font = .systemFont(ofSize: 22, weight: .medium)
@@ -72,7 +88,8 @@ class SignUpViewController: UIViewController {
         return label
     }()
     
-    private let emailTextField: UITextField = {
+    // MARK: - emailTextField
+    private let emailTextField : UITextField = {
         let textField  = UITextField()
         textField.textColor = UIColor.black
         textField.borderStyle = .none
@@ -81,13 +98,15 @@ class SignUpViewController: UIViewController {
         return textField
     }()
     
+    // MARK: - emailLine
     private let emailLine : UIView = {
         let line = UIView()
         line.backgroundColor = .systemGray4 //#a09fa0
         return line
     }()
     
-    private let passwordTextField: UITextField = {
+    // MARK: - passwordTextField
+    private let passwordTextField : UITextField = {
         let textField  = UITextField()
         textField.borderStyle = .none
         textField.textColor = UIColor.black
@@ -96,13 +115,15 @@ class SignUpViewController: UIViewController {
         return textField
     }()
     
+    // MARK: - passwordLine
     private let passwordLine : UIView = {
         let line = UIView()
         line.backgroundColor = .systemGray4 //#a09fa0
         return line
     }()
     
-    private let checkPasswordTextField: UITextField = {
+    // MARK: - checkPasswordTextField
+    private let checkPasswordTextField : UITextField = {
         let textField  = UITextField()
         textField.borderStyle = .none
         textField.textColor = UIColor.black
@@ -111,13 +132,15 @@ class SignUpViewController: UIViewController {
         return textField
     }()
     
+    // MARK: - checkPasswordLine
     private let checkPasswordLine : UIView = {
         let line = UIView()
         line.backgroundColor = .systemGray4 //#a09fa0
         return line
     }()
     
-    private let signUpButton: UIButton = {
+    // MARK: - signUpButton
+    private let signUpButton : UIButton = {
         let button = UIButton()
         button.setTitle("새로운 카카오계정 만들기", for: .normal)
         button.setTitleColor(.black, for: .normal)
@@ -126,13 +149,14 @@ class SignUpViewController: UIViewController {
         return button
     }()
     
+    // MARK: - viewDidLoad func
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         layout()
     }
     
-    
+    // MARK: - presentToWelcomeVC func
     private func presentToWelcomeVC(){
         let WelcomeVC = WelcomeViewController()
         WelcomeVC.modalPresentationStyle = .formSheet
@@ -142,7 +166,7 @@ class SignUpViewController: UIViewController {
         }
     }
     
-    
+    // MARK: - objc touchupSignUpButton func
     @objc
     private func touchupSignUpButton(){
         presentToWelcomeVC()

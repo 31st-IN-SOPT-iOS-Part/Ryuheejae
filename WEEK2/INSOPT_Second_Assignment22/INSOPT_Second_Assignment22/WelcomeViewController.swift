@@ -1,15 +1,22 @@
 import UIKit
+import SnapKit
+
+// MARK: - WelcomeViewController extension
 extension WelcomeViewController {
+    
+    // MARK: - layout func
     private func layout(){
         [nameLabel,checkButton].forEach{
             view.addSubview($0)
         }
         
+        // MARK: - nameLabel AutoLayout
         nameLabel.snp.makeConstraints{ make in
             make.top.equalTo(self.view.safeAreaLayoutGuide).offset(197)
             make.leading.equalTo(self.view.safeAreaLayoutGuide).offset(144)
         }
         
+        // MARK: - checkButton AutoLayout
         checkButton.snp.makeConstraints{ make in
             make.top.equalTo(self.nameLabel.snp.bottom).offset(117)
             make.leading.equalTo(self.view.safeAreaLayoutGuide).offset(21)
@@ -20,8 +27,11 @@ extension WelcomeViewController {
     }
 }
 
+// MARK: - WelcomeViewController class
 class WelcomeViewController: UIViewController {
-    private let nameLabel: UILabel = {
+    
+    // MARK: - nameLabel
+    private let nameLabel : UILabel = {
         let label = UILabel()
         label.text = "OOO님\n환영합니다"
         label.font = .systemFont(ofSize: 20, weight: .semibold)
@@ -30,7 +40,8 @@ class WelcomeViewController: UIViewController {
         return label
     }()
     
-    private lazy var checkButton: UIButton = {
+    // MARK: - checkButton
+    private lazy var checkButton : UIButton = {
         let button = UIButton()
         button.setTitle("확인", for: .normal)
         button.setTitleColor(.black, for: .normal)
@@ -42,13 +53,14 @@ class WelcomeViewController: UIViewController {
     
     var result: String?
     
-    
+    // MARK: - viewDidLoad func
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
         layout()
     }
     
+    // MARK: - dataBind func
     func dataBind(){
         guard let result = self.result else {return}
         nameLabel.text = "\(result)님\n환영합니다"
@@ -58,16 +70,23 @@ class WelcomeViewController: UIViewController {
         nameLabel.text = "\(result)님\n환영합니다"
     }
     
+    // MARK: - presentToFriendTabViewController func
+    // 2주차 생각과제 : https://duwjdtn11.tistory.com/523
     private func presentToFriendTabViewController() {
-        let FriendVC = FriendTabViewController()
-        FriendVC.modalPresentationStyle = .formSheet
+        let FriendVC = FriendTabViewController() // 루트 뷰를 대체할 FriendTabViewController() 생성
+        FriendVC.modalPresentationStyle = .fullScreen
+        let sceneDeligate = UIApplication.shared.connectedScenes.first?.delegate as!SceneDelegate
+        sceneDeligate.window?.rootViewController = FriendVC
         self.present(FriendVC,animated: true,completion: nil)
+        
     }
     
+    // MARK: - @objc touchupNextButton func
     @objc
     private func touchupNextButton() {
         presentToFriendTabViewController()
     }
-    
-    
 }
+    
+    
+

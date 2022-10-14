@@ -1,32 +1,6 @@
 import UIKit
 import SnapKit
 
-// MARK: - WelcomeViewController extension
-extension WelcomeViewController {
-    
-    // MARK: - layout func
-    private func layout(){
-        [nameLabel,checkButton].forEach{
-            view.addSubview($0)
-        }
-        
-        // MARK: - nameLabel AutoLayout
-        nameLabel.snp.makeConstraints{ make in
-            make.top.equalTo(self.view.safeAreaLayoutGuide).offset(197)
-            make.leading.equalTo(self.view.safeAreaLayoutGuide).offset(144)
-        }
-        
-        // MARK: - checkButton AutoLayout
-        checkButton.snp.makeConstraints{ make in
-            make.top.equalTo(self.nameLabel.snp.bottom).offset(117)
-            make.leading.equalTo(self.view.safeAreaLayoutGuide).offset(21)
-            make.width.equalTo(333)
-            make.height.equalTo(44)
-        }
-        
-    }
-}
-
 // MARK: - WelcomeViewController class
 class WelcomeViewController: UIViewController {
     
@@ -56,7 +30,7 @@ class WelcomeViewController: UIViewController {
     // MARK: - viewDidLoad func
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
+        setViewBackgroundColor()
         layout()
     }
     
@@ -76,15 +50,44 @@ class WelcomeViewController: UIViewController {
         let FriendVC = FriendTabViewController() // 루트 뷰를 대체할 FriendTabViewController() 생성
         FriendVC.modalPresentationStyle = .fullScreen
         let sceneDeligate = UIApplication.shared.connectedScenes.first?.delegate as!SceneDelegate
-        sceneDeligate.window?.rootViewController = FriendVC
-        self.present(FriendVC,animated: true,completion: nil)
-        
+        sceneDeligate.window?.rootViewController = UINavigationController(rootViewController: FriendVC)
     }
     
     // MARK: - @objc touchupNextButton func
     @objc
     private func touchupNextButton() {
         presentToFriendTabViewController()
+    }
+}
+
+// MARK: - WelcomeViewController extension
+extension WelcomeViewController {
+    
+    // MARK: - layout func
+    private func layout(){
+        [nameLabel,checkButton].forEach{
+            view.addSubview($0)
+        }
+        
+        // MARK: - nameLabel AutoLayout
+        nameLabel.snp.makeConstraints{ make in
+            make.top.equalTo(self.view.safeAreaLayoutGuide).offset(197)
+            make.leading.equalTo(self.view.safeAreaLayoutGuide).offset(144)
+        }
+        
+        // MARK: - checkButton AutoLayout
+        checkButton.snp.makeConstraints{ make in
+            make.top.equalTo(self.nameLabel.snp.bottom).offset(117)
+            make.leading.equalTo(self.view.safeAreaLayoutGuide).offset(21)
+            make.width.equalTo(333)
+            make.height.equalTo(44)
+        }
+        
+    }
+    
+    // MARK: - setViewBackgroundColor func
+    private func setViewBackgroundColor() {
+        view.backgroundColor = .white
     }
 }
     

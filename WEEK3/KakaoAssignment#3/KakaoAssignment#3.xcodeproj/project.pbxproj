@@ -15,24 +15,23 @@
 		D2FDB73B2912A4C400B5970F /* KakaoAssignment_3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB73A2912A4C400B5970F /* KakaoAssignment_3Tests.swift */; };
 		D2FDB7452912A4C400B5970F /* KakaoAssignment_3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7442912A4C400B5970F /* KakaoAssignment_3UITests.swift */; };
 		D2FDB7472912A4C400B5970F /* KakaoAssignment_3UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7462912A4C400B5970F /* KakaoAssignment_3UITestsLaunchTests.swift */; };
-		D2FDB7542912A50500B5970F /* ChatCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7532912A50500B5970F /* ChatCollectionViewController.swift */; };
-		D2FDB7562912A51200B5970F /* FriendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7552912A51200B5970F /* FriendModel.swift */; };
-		D2FDB75F2912A52400B5970F /* KakaoTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7572912A52400B5970F /* KakaoTabbarController.swift */; };
-		D2FDB7602912A52400B5970F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7582912A52400B5970F /* ProfileViewController.swift */; };
-		D2FDB7612912A52400B5970F /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7592912A52400B5970F /* WelcomeViewController.swift */; };
-		D2FDB7622912A52400B5970F /* FriendTabbleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB75A2912A52400B5970F /* FriendTabbleViewController.swift */; };
-		D2FDB7642912A52400B5970F /* FriendViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB75C2912A52400B5970F /* FriendViewCell.swift */; };
-		D2FDB7652912A52400B5970F /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB75D2912A52400B5970F /* MoreViewController.swift */; };
-		D2FDB7662912A52400B5970F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB75E2912A52400B5970F /* SignUpViewController.swift */; };
 		D2FDB7692912A62400B5970F /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D2FDB7682912A62400B5970F /* SnapKit */; };
 		D2FDB76C2912A64500B5970F /* SwiftyColor in Frameworks */ = {isa = PBXBuildFile; productRef = D2FDB76B2912A64500B5970F /* SwiftyColor */; };
 		D2FDB76F2912A67F00B5970F /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = D2FDB76E2912A67F00B5970F /* Then */; };
 		D2FDB7712912A6C900B5970F /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7702912A6C900B5970F /* SignInViewController.swift */; };
 		D2FDB7732912B4EB00B5970F /* ChatCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7722912B4EB00B5970F /* ChatCollectionViewCell.swift */; };
-		D2FDB7752913533700B5970F /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7742913533700B5970F /* ChatModel.swift */; };
 		D2FDB7772913584000B5970F /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7762913584000B5970F /* PhotoCollectionViewController.swift */; };
-		D2FDB779291367B800B5970F /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB778291367B800B5970F /* PhotoModel.swift */; };
 		D2FDB77B2913689C00B5970F /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB77A2913689C00B5970F /* PhotoCollectionViewCell.swift */; };
+		D2FDB7802913863000B5970F /* FriendViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB77F2913863000B5970F /* FriendViewCell.swift */; };
+		D2FDB799291389B500B5970F /* FriendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB798291389B500B5970F /* FriendModel.swift */; };
+		D2FDB79B291389BF00B5970F /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB79A291389BF00B5970F /* ChatModel.swift */; };
+		D2FDB79D291389C900B5970F /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB79C291389C900B5970F /* PhotoModel.swift */; };
+		D2FDB79F29138AA300B5970F /* WelcomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB79E29138AA300B5970F /* WelcomViewController.swift */; };
+		D2FDB7A129138AE600B5970F /* FriendTableVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7A029138AE600B5970F /* FriendTableVIewController.swift */; };
+		D2FDB7A329138B5D00B5970F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7A229138B5D00B5970F /* ProfileViewController.swift */; };
+		D2FDB7A529138B9100B5970F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7A429138B9100B5970F /* SignUpViewController.swift */; };
+		D2FDB7A729138C0E00B5970F /* KakaoTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7A629138C0E00B5970F /* KakaoTabbarController.swift */; };
+		D2FDB7A929138D4D00B5970F /* ChatCollectionViewConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7A829138D4D00B5970F /* ChatCollectionViewConroller.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,21 +64,20 @@
 		D2FDB7402912A4C400B5970F /* KakaoAssignment#3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KakaoAssignment#3UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2FDB7442912A4C400B5970F /* KakaoAssignment_3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoAssignment_3UITests.swift; sourceTree = "<group>"; };
 		D2FDB7462912A4C400B5970F /* KakaoAssignment_3UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoAssignment_3UITestsLaunchTests.swift; sourceTree = "<group>"; };
-		D2FDB7532912A50500B5970F /* ChatCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatCollectionViewController.swift; path = "../../../../../../Desktop/무제 폴더 2/ChatCollectionViewController.swift"; sourceTree = "<group>"; };
-		D2FDB7552912A51200B5970F /* FriendModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendModel.swift; path = "../../../../../../Desktop/무제 폴더 2/FriendModel.swift"; sourceTree = "<group>"; };
-		D2FDB7572912A52400B5970F /* KakaoTabbarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KakaoTabbarController.swift; path = "../../../../../../Desktop/무제 폴더 2/KakaoTabbarController.swift"; sourceTree = "<group>"; };
-		D2FDB7582912A52400B5970F /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = "../../../../../../Desktop/무제 폴더 2/ProfileViewController.swift"; sourceTree = "<group>"; };
-		D2FDB7592912A52400B5970F /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeViewController.swift; path = "../../../../../../Desktop/무제 폴더 2/WelcomeViewController.swift"; sourceTree = "<group>"; };
-		D2FDB75A2912A52400B5970F /* FriendTabbleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendTabbleViewController.swift; path = "../../../../../../Desktop/무제 폴더 2/FriendTabbleViewController.swift"; sourceTree = "<group>"; };
-		D2FDB75C2912A52400B5970F /* FriendViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FriendViewCell.swift; path = "../../../../../../Desktop/무제 폴더 2/FriendViewCell.swift"; sourceTree = "<group>"; };
-		D2FDB75D2912A52400B5970F /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MoreViewController.swift; path = "../../../../../../Desktop/무제 폴더 2/MoreViewController.swift"; sourceTree = "<group>"; };
-		D2FDB75E2912A52400B5970F /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SignUpViewController.swift; path = "../../../../../../Desktop/무제 폴더 2/SignUpViewController.swift"; sourceTree = "<group>"; };
 		D2FDB7702912A6C900B5970F /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		D2FDB7722912B4EB00B5970F /* ChatCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCollectionViewCell.swift; sourceTree = "<group>"; };
-		D2FDB7742913533700B5970F /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 		D2FDB7762913584000B5970F /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
-		D2FDB778291367B800B5970F /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
 		D2FDB77A2913689C00B5970F /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		D2FDB77F2913863000B5970F /* FriendViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewCell.swift; sourceTree = "<group>"; };
+		D2FDB798291389B500B5970F /* FriendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendModel.swift; sourceTree = "<group>"; };
+		D2FDB79A291389BF00B5970F /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
+		D2FDB79C291389C900B5970F /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		D2FDB79E29138AA300B5970F /* WelcomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomViewController.swift; sourceTree = "<group>"; };
+		D2FDB7A029138AE600B5970F /* FriendTableVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableVIewController.swift; sourceTree = "<group>"; };
+		D2FDB7A229138B5D00B5970F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		D2FDB7A429138B9100B5970F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		D2FDB7A629138C0E00B5970F /* KakaoTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoTabbarController.swift; sourceTree = "<group>"; };
+		D2FDB7A829138D4D00B5970F /* ChatCollectionViewConroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCollectionViewConroller.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,26 +132,25 @@
 			isa = PBXGroup;
 			children = (
 				D2FDB77A2913689C00B5970F /* PhotoCollectionViewCell.swift */,
-				D2FDB7552912A51200B5970F /* FriendModel.swift */,
-				D2FDB7532912A50500B5970F /* ChatCollectionViewController.swift */,
-				D2FDB75A2912A52400B5970F /* FriendTabbleViewController.swift */,
-				D2FDB75C2912A52400B5970F /* FriendViewCell.swift */,
-				D2FDB7572912A52400B5970F /* KakaoTabbarController.swift */,
-				D2FDB75D2912A52400B5970F /* MoreViewController.swift */,
-				D2FDB7582912A52400B5970F /* ProfileViewController.swift */,
-				D2FDB75E2912A52400B5970F /* SignUpViewController.swift */,
-				D2FDB7592912A52400B5970F /* WelcomeViewController.swift */,
+				D2FDB77F2913863000B5970F /* FriendViewCell.swift */,
+				D2FDB7722912B4EB00B5970F /* ChatCollectionViewCell.swift */,
+				D2FDB7702912A6C900B5970F /* SignInViewController.swift */,
+				D2FDB7762913584000B5970F /* PhotoCollectionViewController.swift */,
 				D2FDB7232912A4C200B5970F /* AppDelegate.swift */,
 				D2FDB7252912A4C200B5970F /* SceneDelegate.swift */,
 				D2FDB7292912A4C200B5970F /* Main.storyboard */,
 				D2FDB72C2912A4C400B5970F /* Assets.xcassets */,
 				D2FDB72E2912A4C400B5970F /* LaunchScreen.storyboard */,
 				D2FDB7312912A4C400B5970F /* Info.plist */,
-				D2FDB7702912A6C900B5970F /* SignInViewController.swift */,
-				D2FDB7722912B4EB00B5970F /* ChatCollectionViewCell.swift */,
-				D2FDB7742913533700B5970F /* ChatModel.swift */,
-				D2FDB7762913584000B5970F /* PhotoCollectionViewController.swift */,
-				D2FDB778291367B800B5970F /* PhotoModel.swift */,
+				D2FDB798291389B500B5970F /* FriendModel.swift */,
+				D2FDB79A291389BF00B5970F /* ChatModel.swift */,
+				D2FDB79C291389C900B5970F /* PhotoModel.swift */,
+				D2FDB79E29138AA300B5970F /* WelcomViewController.swift */,
+				D2FDB7A029138AE600B5970F /* FriendTableVIewController.swift */,
+				D2FDB7A229138B5D00B5970F /* ProfileViewController.swift */,
+				D2FDB7A429138B9100B5970F /* SignUpViewController.swift */,
+				D2FDB7A629138C0E00B5970F /* KakaoTabbarController.swift */,
+				D2FDB7A829138D4D00B5970F /* ChatCollectionViewConroller.swift */,
 			);
 			path = "KakaoAssignment#3";
 			sourceTree = "<group>";
@@ -316,23 +313,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2FDB7602912A52400B5970F /* ProfileViewController.swift in Sources */,
 				D2FDB7242912A4C200B5970F /* AppDelegate.swift in Sources */,
+				D2FDB7A729138C0E00B5970F /* KakaoTabbarController.swift in Sources */,
 				D2FDB7732912B4EB00B5970F /* ChatCollectionViewCell.swift in Sources */,
-				D2FDB7752913533700B5970F /* ChatModel.swift in Sources */,
 				D2FDB77B2913689C00B5970F /* PhotoCollectionViewCell.swift in Sources */,
-				D2FDB7642912A52400B5970F /* FriendViewCell.swift in Sources */,
-				D2FDB75F2912A52400B5970F /* KakaoTabbarController.swift in Sources */,
-				D2FDB779291367B800B5970F /* PhotoModel.swift in Sources */,
-				D2FDB7652912A52400B5970F /* MoreViewController.swift in Sources */,
+				D2FDB79F29138AA300B5970F /* WelcomViewController.swift in Sources */,
 				D2FDB7712912A6C900B5970F /* SignInViewController.swift in Sources */,
-				D2FDB7662912A52400B5970F /* SignUpViewController.swift in Sources */,
-				D2FDB7562912A51200B5970F /* FriendModel.swift in Sources */,
+				D2FDB7802913863000B5970F /* FriendViewCell.swift in Sources */,
+				D2FDB799291389B500B5970F /* FriendModel.swift in Sources */,
 				D2FDB7772913584000B5970F /* PhotoCollectionViewController.swift in Sources */,
-				D2FDB7542912A50500B5970F /* ChatCollectionViewController.swift in Sources */,
+				D2FDB7A929138D4D00B5970F /* ChatCollectionViewConroller.swift in Sources */,
+				D2FDB7A529138B9100B5970F /* SignUpViewController.swift in Sources */,
 				D2FDB7262912A4C200B5970F /* SceneDelegate.swift in Sources */,
-				D2FDB7622912A52400B5970F /* FriendTabbleViewController.swift in Sources */,
-				D2FDB7612912A52400B5970F /* WelcomeViewController.swift in Sources */,
+				D2FDB7A129138AE600B5970F /* FriendTableVIewController.swift in Sources */,
+				D2FDB7A329138B5D00B5970F /* ProfileViewController.swift in Sources */,
+				D2FDB79D291389C900B5970F /* PhotoModel.swift in Sources */,
+				D2FDB79B291389BF00B5970F /* ChatModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

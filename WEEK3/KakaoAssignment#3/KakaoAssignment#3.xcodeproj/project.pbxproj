@@ -31,6 +31,8 @@
 		D2FDB7732912B4EB00B5970F /* ChatCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7722912B4EB00B5970F /* ChatCollectionViewCell.swift */; };
 		D2FDB7752913533700B5970F /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7742913533700B5970F /* ChatModel.swift */; };
 		D2FDB7772913584000B5970F /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7762913584000B5970F /* PhotoCollectionViewController.swift */; };
+		D2FDB779291367B800B5970F /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB778291367B800B5970F /* PhotoModel.swift */; };
+		D2FDB77B2913689C00B5970F /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB77A2913689C00B5970F /* PhotoCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,8 @@
 		D2FDB7722912B4EB00B5970F /* ChatCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCollectionViewCell.swift; sourceTree = "<group>"; };
 		D2FDB7742913533700B5970F /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 		D2FDB7762913584000B5970F /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
+		D2FDB778291367B800B5970F /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		D2FDB77A2913689C00B5970F /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +133,7 @@
 		D2FDB7222912A4C200B5970F /* KakaoAssignment#3 */ = {
 			isa = PBXGroup;
 			children = (
+				D2FDB77A2913689C00B5970F /* PhotoCollectionViewCell.swift */,
 				D2FDB7552912A51200B5970F /* FriendModel.swift */,
 				D2FDB7532912A50500B5970F /* ChatCollectionViewController.swift */,
 				D2FDB75A2912A52400B5970F /* FriendTabbleViewController.swift */,
@@ -148,6 +153,7 @@
 				D2FDB7722912B4EB00B5970F /* ChatCollectionViewCell.swift */,
 				D2FDB7742913533700B5970F /* ChatModel.swift */,
 				D2FDB7762913584000B5970F /* PhotoCollectionViewController.swift */,
+				D2FDB778291367B800B5970F /* PhotoModel.swift */,
 			);
 			path = "KakaoAssignment#3";
 			sourceTree = "<group>";
@@ -314,8 +320,10 @@
 				D2FDB7242912A4C200B5970F /* AppDelegate.swift in Sources */,
 				D2FDB7732912B4EB00B5970F /* ChatCollectionViewCell.swift in Sources */,
 				D2FDB7752913533700B5970F /* ChatModel.swift in Sources */,
+				D2FDB77B2913689C00B5970F /* PhotoCollectionViewCell.swift in Sources */,
 				D2FDB7642912A52400B5970F /* FriendViewCell.swift in Sources */,
 				D2FDB75F2912A52400B5970F /* KakaoTabbarController.swift in Sources */,
+				D2FDB779291367B800B5970F /* PhotoModel.swift in Sources */,
 				D2FDB7652912A52400B5970F /* MoreViewController.swift in Sources */,
 				D2FDB7712912A6C900B5970F /* SignInViewController.swift in Sources */,
 				D2FDB7662912A52400B5970F /* SignUpViewController.swift in Sources */,

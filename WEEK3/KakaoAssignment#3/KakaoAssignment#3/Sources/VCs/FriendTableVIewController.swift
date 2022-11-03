@@ -180,7 +180,20 @@ extension FriendTabbleViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 60
     }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let action = UIContextualAction(style: .normal, title: "삭제", handler: {action, view, completionHandler in print("action performed")
+            completionHandler(true)
+        })
+        action.backgroundColor = .red
+        //action 글자 색상 변경 어케하징
+        
+        friendList.remove(at: indexPath.row)
+        tableView.deleteRows(at: [indexPath], with: .fade)
+        return UISwipeActionsConfiguration(actions: [action])
+    }
 }
+
 
 
 // MARK: - UITableViewDataSource
@@ -194,20 +207,5 @@ extension FriendTabbleViewController : UITableViewDataSource {
         
         friendCell.dataBind(model : friendList[indexPath.row])
         return friendCell
-    }
-}
-
-
-
-import UIKit
-
-class KakaoTabbar: UITabBar {
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        clipsToBounds = true
-    }
-    
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
     }
 }

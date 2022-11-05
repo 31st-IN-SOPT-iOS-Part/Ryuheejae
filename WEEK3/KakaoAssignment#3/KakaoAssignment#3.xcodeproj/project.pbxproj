@@ -32,6 +32,7 @@
 		D2FDB7A529138B9100B5970F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7A429138B9100B5970F /* SignUpViewController.swift */; };
 		D2FDB7A729138C0E00B5970F /* KakaoTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7A629138C0E00B5970F /* KakaoTabbarController.swift */; };
 		D2FDB7A929138D4D00B5970F /* ChatCollectionViewConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7A829138D4D00B5970F /* ChatCollectionViewConroller.swift */; };
+		D2FDB7B22915F84C00B5970F /* MyProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7B12915F84B00B5970F /* MyProfileHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		D2FDB7A429138B9100B5970F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		D2FDB7A629138C0E00B5970F /* KakaoTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoTabbarController.swift; sourceTree = "<group>"; };
 		D2FDB7A829138D4D00B5970F /* ChatCollectionViewConroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCollectionViewConroller.swift; sourceTree = "<group>"; };
+		D2FDB7B12915F84B00B5970F /* MyProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 				D2FDB77A2913689C00B5970F /* PhotoCollectionViewCell.swift */,
 				D2FDB77F2913863000B5970F /* FriendViewCell.swift */,
 				D2FDB7722912B4EB00B5970F /* ChatCollectionViewCell.swift */,
+				D2FDB7B12915F84B00B5970F /* MyProfileHeaderView.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -353,6 +356,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D2FDB7B22915F84C00B5970F /* MyProfileHeaderView.swift in Sources */,
 				D2FDB7242912A4C200B5970F /* AppDelegate.swift in Sources */,
 				D2FDB7A729138C0E00B5970F /* KakaoTabbarController.swift in Sources */,
 				D2FDB7732912B4EB00B5970F /* ChatCollectionViewCell.swift in Sources */,

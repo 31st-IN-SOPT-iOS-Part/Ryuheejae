@@ -26,6 +26,7 @@ class FriendTabbleViewController : UIViewController {
     }()
     
     var friendList: [FriendModel] = [
+        FriendModel(name: "나쟈냐", profileMessage: "오킹", profileImage: "profileImg"),
         FriendModel(name: "김솝트", profileMessage: "햄볶아요", profileImage: "Image"),
         FriendModel(name: "안솝트", profileMessage: "귀여아요", profileImage: "Image 1"),
         FriendModel(name: "최솝트", profileMessage: "킹받아요", profileImage: "Image 2"),
@@ -57,48 +58,48 @@ class FriendTabbleViewController : UIViewController {
         return imgView
     }()
     
-    // MARK: - profileButton
-    private let profileButton : UIButton = {
-        let button = UIButton()
-        button.addTarget(self, action: #selector(touchUpProfileButton), for: .touchUpInside)
-        button.setImage(UIImage(named: "profileImg"), for: .normal)
-        return button
-    }()
-    
-    // MARK: - profileName
-    private let profileName = UILabel().then {
-        $0.text = "김솝트"
-        $0.textColor = .black
-        $0.font = .systemFont(ofSize: 12, weight: .medium)
-    }
-    
-    // MARK: - profileMessage
-    private let profileMessage = UILabel().then {
-        $0.text = "상태메세지는 여기에"
-        $0.textColor = 0xA6A6A6.color
-        $0.font = .systemFont(ofSize: 11, weight: .medium)
-    }
+//    // MARK: - profileButton
+//    private let profileButton : UIButton = {
+//        let button = UIButton()
+//        button.addTarget(self, action: #selector(touchUpProfileButton), for: .touchUpInside)
+//        button.setImage(UIImage(named: "profileImg"), for: .normal)
+//        return button
+//    }()
+//
+//    // MARK: - profileName
+//    private let profileName = UILabel().then {
+//        $0.text = "김솝트"
+//        $0.textColor = .black
+//        $0.font = .systemFont(ofSize: 12, weight: .medium)
+//    }
+//
+//    // MARK: - profileMessage
+//    private let profileMessage = UILabel().then {
+//        $0.text = "상태메세지는 여기에"
+//        $0.textColor = 0xA6A6A6.color
+//        $0.font = .systemFont(ofSize: 11, weight: .medium)
+//    }
     
     // MARK: - viewDidLoad func
     override func viewDidLoad() {
         super.viewDidLoad()
-        setViewBackgroundColor()
+        //config()
         layout()
         register()
     }
     
-    // MARK: - presentToProfileViewController func
-    private func presentToProfileViewController(){
-        let ProfileVC = ProfileViewController()
-        ProfileVC.modalPresentationStyle = .formSheet
-        self.present(ProfileVC,animated: true,completion: nil)
-    }
-    
-    // MARK: - @objc touchUpProfileButton func
-    @objc
-    private func touchUpProfileButton() {
-        presentToProfileViewController()
-    }
+//    // MARK: - presentToProfileViewController func
+//    private func presentToProfileViewController(){
+//        let ProfileVC = ProfileViewController()
+//        ProfileVC.modalPresentationStyle = .formSheet
+//        self.present(ProfileVC,animated: true,completion: nil)
+//    }
+//
+//    // MARK: - @objc touchUpProfileButton func
+//    @objc
+//    private func touchUpProfileButton() {
+//        presentToProfileViewController()
+//    }
 }
 
 
@@ -107,7 +108,7 @@ extension FriendTabbleViewController {
     
     // MARK: - layout func
     private func layout() {
-        [friendView, friendTableView, profileButton, profileName, profileMessage].forEach{
+        [friendView, friendTableView, /*profileButton, profileName, profileMessage*/].forEach{
             view.addSubview($0)
         }
         
@@ -125,7 +126,7 @@ extension FriendTabbleViewController {
         
         // MARK: - friendView AutoLayout
         friendTableView.snp.makeConstraints{ make in
-            make.top.equalTo(self.profileButton.snp.bottom).offset(10)
+            make.top.equalTo(self.friendView.snp.bottom).offset(23)
             make.leading.trailing.equalTo(self.view.safeAreaLayoutGuide)
             make.bottom.equalToSuperview()
             make.height.equalTo(70 * friendList.count)
@@ -145,36 +146,37 @@ extension FriendTabbleViewController {
             make.height.equalTo(21)
         }
         
-        // MARK: - profileButton AutoLayout
-        profileButton.snp.makeConstraints{ make in
-            make.top.equalTo(self.friendView.snp.bottom).offset(15)
-            make.leading.equalToSuperview().offset(14)
-            make.width.equalTo(59)
-            make.height.equalTo(58)
-        }
-        
-        profileName.snp.makeConstraints { make in
-            make.top.equalTo(self.profileButton).offset(10)
-            make.leading.equalTo(self.profileButton.snp.trailing).offset(3)
-        }
- 
-        profileMessage.snp.makeConstraints { make in
-            make.top.equalTo(self.profileName.snp.bottom).offset(3)
-            make.leading.equalTo(self.profileName)
-        }
+//        // MARK: - profileButton AutoLayout
+//        profileButton.snp.makeConstraints{ make in
+//            make.top.equalTo(self.friendView.snp.bottom).offset(15)
+//            make.leading.equalToSuperview().offset(14)
+//            make.width.equalTo(59)
+//            make.height.equalTo(58)
+//        }
+//
+//        profileName.snp.makeConstraints { make in
+//            make.top.equalTo(self.profileButton).offset(10)
+//            make.leading.equalTo(self.profileButton.snp.trailing).offset(3)
+//        }
+//
+//        profileMessage.snp.makeConstraints { make in
+//            make.top.equalTo(self.profileName.snp.bottom).offset(3)
+//            make.leading.equalTo(self.profileName)
+//        }
     }
     
     // MARK: - General Helpers
     private func register() {
         friendTableView.register(FriendTableViewCell.self, forCellReuseIdentifier: FriendTableViewCell.identifier)
+        friendTableView.register(MyProfileHeaderView.self, forHeaderFooterViewReuseIdentifier: MyProfileHeaderView.identifier)
+             }
     }
     
-    // MARK: - setViewBackgroundColor func
-    private func setViewBackgroundColor() {
-        view.backgroundColor = .white
-    }
-    
-}
+//    // MARK: - setViewBackgroundColor func
+//    private func config() {
+//        view.backgroundColor = .white
+//    }
+// }
 
 extension FriendTabbleViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -192,6 +194,17 @@ extension FriendTabbleViewController : UITableViewDelegate {
         tableView.deleteRows(at: [indexPath], with: .fade)
         return UISwipeActionsConfiguration(actions: [action])
     }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+             guard let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: MyProfileHeaderView.identifier) as? MyProfileHeaderView else {
+                 return UIView()
+             }
+             return headerView
+         }
+
+         func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+             return 73
+         }
 }
 
 

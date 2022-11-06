@@ -7,7 +7,7 @@ import Then
 
 // MARK: - ChatCollectionViewCell
 
-final class ChatCollectionViewCell : UICollectionViewCell {
+final class ChatCollectionViewCell: UICollectionViewCell {
     
     // MARK: - Identifier
     
@@ -21,7 +21,7 @@ final class ChatCollectionViewCell : UICollectionViewCell {
         $0.clipsToBounds = true
     }
     
-    private let name = UILabel().then {
+    private let nameLabel = UILabel().then {
         $0.textColor = .black
         $0.font = .systemFont(ofSize: 12, weight: .medium)
     }
@@ -52,7 +52,7 @@ extension ChatCollectionViewCell {
         backgroundColor = .white
         contentView.backgroundColor = .clear
         
-        [profileContainerView, name, profileMessage, sendTime].forEach {
+        [profileContainerView, nameLabel, profileMessage, sendTime].forEach {
             contentView.addSubview($0)
         }
         
@@ -68,8 +68,7 @@ extension ChatCollectionViewCell {
         profileContainerView.snp.makeConstraints { make in
             make.top.equalToSuperview()
             make.leading.equalToSuperview().offset(15)
-            make.width.equalTo(50)
-            make.height.equalTo(50)
+            make.size.equalTo(50)
         }
         
         profileImageView.snp.makeConstraints { make in
@@ -77,27 +76,27 @@ extension ChatCollectionViewCell {
             make.edges.equalToSuperview()
         }
         
-        name.snp.makeConstraints { make in
+        nameLabel.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(10)
             make.leading.equalTo(self.profileContainerView.snp.trailing).offset(3)
         }
  
         profileMessage.snp.makeConstraints { make in
-            make.top.equalTo(self.name.snp.bottom).offset(3)
-            make.leading.equalTo(self.name)
+            make.top.equalTo(self.nameLabel.snp.bottom).offset(3)
+            make.leading.equalTo(self.nameLabel)
         }
         
         sendTime.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(14)
-            make.leading.equalTo(self.name.snp.trailing).offset(226)
+            make.leading.equalTo(self.nameLabel.snp.trailing).offset(226)
         }
         
     }
     
-    func dataBind(model: ChatModel){
-        name.text = model.name
+    func dataBind(model: FriendModel){
+        nameLabel.text = model.name
         profileMessage.text = model.profileMessage
-        profileImageView.image = UIImage(named: model.profileImage)
+        profileImageView.image = UIImage(named: model.profileImage ?? "")
         sendTime.text = model.sendTime
         
     }

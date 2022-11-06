@@ -20,19 +20,32 @@
 		D2FDB76F2912A67F00B5970F /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = D2FDB76E2912A67F00B5970F /* Then */; };
 		D2FDB7712912A6C900B5970F /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7702912A6C900B5970F /* SignInViewController.swift */; };
 		D2FDB7732912B4EB00B5970F /* ChatCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7722912B4EB00B5970F /* ChatCollectionViewCell.swift */; };
-		D2FDB7772913584000B5970F /* PhotoCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7762913584000B5970F /* PhotoCollectionViewController.swift */; };
+		D2FDB7772913584000B5970F /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7762913584000B5970F /* PhotoViewController.swift */; };
 		D2FDB77B2913689C00B5970F /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB77A2913689C00B5970F /* PhotoCollectionViewCell.swift */; };
 		D2FDB7802913863000B5970F /* FriendViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB77F2913863000B5970F /* FriendViewCell.swift */; };
 		D2FDB799291389B500B5970F /* FriendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB798291389B500B5970F /* FriendModel.swift */; };
-		D2FDB79B291389BF00B5970F /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB79A291389BF00B5970F /* ChatModel.swift */; };
 		D2FDB79D291389C900B5970F /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB79C291389C900B5970F /* PhotoModel.swift */; };
 		D2FDB79F29138AA300B5970F /* WelcomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB79E29138AA300B5970F /* WelcomViewController.swift */; };
-		D2FDB7A129138AE600B5970F /* FriendTableVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7A029138AE600B5970F /* FriendTableVIewController.swift */; };
+		D2FDB7A129138AE600B5970F /* FriendVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7A029138AE600B5970F /* FriendVIewController.swift */; };
 		D2FDB7A329138B5D00B5970F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7A229138B5D00B5970F /* ProfileViewController.swift */; };
 		D2FDB7A529138B9100B5970F /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7A429138B9100B5970F /* SignUpViewController.swift */; };
 		D2FDB7A729138C0E00B5970F /* KakaoTabbarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7A629138C0E00B5970F /* KakaoTabbarController.swift */; };
-		D2FDB7A929138D4D00B5970F /* ChatCollectionViewConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7A829138D4D00B5970F /* ChatCollectionViewConroller.swift */; };
+		D2FDB7A929138D4D00B5970F /* ChatViewConroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7A829138D4D00B5970F /* ChatViewConroller.swift */; };
 		D2FDB7B22915F84C00B5970F /* MyProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7B12915F84B00B5970F /* MyProfileHeaderView.swift */; };
+		D2FDB7FC2917D12600B5970F /* ChatViewControllerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7FB2917D12600B5970F /* ChatViewControllerLayout.swift */; };
+		D2FDB7FF2917D75A00B5970F /* ChatViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7FE2917D75A00B5970F /* ChatViewControllerDelegate.swift */; };
+		D2FDB8012917D76F00B5970F /* ChatViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB8002917D76F00B5970F /* ChatViewControllerDataSource.swift */; };
+		D2FDB8032917D90C00B5970F /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB8022917D90C00B5970F /* ProfileView.swift */; };
+		D2FDB8052917DE0A00B5970F /* PhotoViewControllerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB8042917DE0A00B5970F /* PhotoViewControllerLayout.swift */; };
+		D2FDB8072917E81F00B5970F /* FriendViewControllerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB8062917E81F00B5970F /* FriendViewControllerLayout.swift */; };
+		D2FDB8092917E85500B5970F /* FriendViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB8082917E85500B5970F /* FriendViewControllerDelegate.swift */; };
+		D2FDB80B2917E88200B5970F /* FriendViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB80A2917E88200B5970F /* FriendViewControllerDataSource.swift */; };
+		D2FDB80D2917EA5B00B5970F /* PhotoViewControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB80C2917EA5B00B5970F /* PhotoViewControllerDataSource.swift */; };
+		D2FDB80F2917EA7B00B5970F /* PhotoViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB80E2917EA7B00B5970F /* PhotoViewControllerDelegate.swift */; };
+		D2FDB8112917EABE00B5970F /* WelcomeViewControllerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB8102917EABE00B5970F /* WelcomeViewControllerLayout.swift */; };
+		D2FDB8132917EB7300B5970F /* SignUpViewControllerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB8122917EB7300B5970F /* SignUpViewControllerLayout.swift */; };
+		D2FDB8162917EDE900B5970F /* SignInViewControllerLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB8152917EDE900B5970F /* SignInViewControllerLayout.swift */; };
+		D2FDB8182917F28B00B5970F /* KakaoTabbarControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB8172917F28B00B5970F /* KakaoTabbarControllerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,21 +78,34 @@
 		D2FDB7402912A4C400B5970F /* KakaoAssignment#3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "KakaoAssignment#3UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2FDB7442912A4C400B5970F /* KakaoAssignment_3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoAssignment_3UITests.swift; sourceTree = "<group>"; };
 		D2FDB7462912A4C400B5970F /* KakaoAssignment_3UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoAssignment_3UITestsLaunchTests.swift; sourceTree = "<group>"; };
-		D2FDB7702912A6C900B5970F /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		D2FDB7702912A6C900B5970F /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInViewController.swift; path = "KakaoAssignment#3/Sources/VCs/SignInViewController.swift"; sourceTree = SOURCE_ROOT; };
 		D2FDB7722912B4EB00B5970F /* ChatCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCollectionViewCell.swift; sourceTree = "<group>"; };
-		D2FDB7762913584000B5970F /* PhotoCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewController.swift; sourceTree = "<group>"; };
+		D2FDB7762913584000B5970F /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 		D2FDB77A2913689C00B5970F /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
 		D2FDB77F2913863000B5970F /* FriendViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewCell.swift; sourceTree = "<group>"; };
 		D2FDB798291389B500B5970F /* FriendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendModel.swift; sourceTree = "<group>"; };
-		D2FDB79A291389BF00B5970F /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 		D2FDB79C291389C900B5970F /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
 		D2FDB79E29138AA300B5970F /* WelcomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomViewController.swift; sourceTree = "<group>"; };
-		D2FDB7A029138AE600B5970F /* FriendTableVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableVIewController.swift; sourceTree = "<group>"; };
+		D2FDB7A029138AE600B5970F /* FriendVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendVIewController.swift; sourceTree = "<group>"; };
 		D2FDB7A229138B5D00B5970F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		D2FDB7A429138B9100B5970F /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		D2FDB7A629138C0E00B5970F /* KakaoTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoTabbarController.swift; sourceTree = "<group>"; };
-		D2FDB7A829138D4D00B5970F /* ChatCollectionViewConroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatCollectionViewConroller.swift; sourceTree = "<group>"; };
+		D2FDB7A629138C0E00B5970F /* KakaoTabbarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = KakaoTabbarController.swift; path = ../KakaoTabbarController.swift; sourceTree = "<group>"; };
+		D2FDB7A829138D4D00B5970F /* ChatViewConroller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewConroller.swift; sourceTree = "<group>"; };
 		D2FDB7B12915F84B00B5970F /* MyProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyProfileHeaderView.swift; sourceTree = "<group>"; };
+		D2FDB7FB2917D12600B5970F /* ChatViewControllerLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewControllerLayout.swift; sourceTree = "<group>"; };
+		D2FDB7FE2917D75A00B5970F /* ChatViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewControllerDelegate.swift; sourceTree = "<group>"; };
+		D2FDB8002917D76F00B5970F /* ChatViewControllerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewControllerDataSource.swift; sourceTree = "<group>"; };
+		D2FDB8022917D90C00B5970F /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		D2FDB8042917DE0A00B5970F /* PhotoViewControllerLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewControllerLayout.swift; sourceTree = "<group>"; };
+		D2FDB8062917E81F00B5970F /* FriendViewControllerLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewControllerLayout.swift; sourceTree = "<group>"; };
+		D2FDB8082917E85500B5970F /* FriendViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewControllerDelegate.swift; sourceTree = "<group>"; };
+		D2FDB80A2917E88200B5970F /* FriendViewControllerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewControllerDataSource.swift; sourceTree = "<group>"; };
+		D2FDB80C2917EA5B00B5970F /* PhotoViewControllerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewControllerDataSource.swift; sourceTree = "<group>"; };
+		D2FDB80E2917EA7B00B5970F /* PhotoViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewControllerDelegate.swift; sourceTree = "<group>"; };
+		D2FDB8102917EABE00B5970F /* WelcomeViewControllerLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewControllerLayout.swift; sourceTree = "<group>"; };
+		D2FDB8122917EB7300B5970F /* SignUpViewControllerLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewControllerLayout.swift; sourceTree = "<group>"; };
+		D2FDB8152917EDE900B5970F /* SignInViewControllerLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewControllerLayout.swift; sourceTree = "<group>"; };
+		D2FDB8172917F28B00B5970F /* KakaoTabbarControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KakaoTabbarControllerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,7 +197,6 @@
 			isa = PBXGroup;
 			children = (
 				D2FDB798291389B500B5970F /* FriendModel.swift */,
-				D2FDB79A291389BF00B5970F /* ChatModel.swift */,
 				D2FDB79C291389C900B5970F /* PhotoModel.swift */,
 			);
 			path = Models;
@@ -183,7 +208,6 @@
 				D2FDB77A2913689C00B5970F /* PhotoCollectionViewCell.swift */,
 				D2FDB77F2913863000B5970F /* FriendViewCell.swift */,
 				D2FDB7722912B4EB00B5970F /* ChatCollectionViewCell.swift */,
-				D2FDB7B12915F84B00B5970F /* MyProfileHeaderView.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -191,14 +215,14 @@
 		D2FDB7AD2913926400B5970F /* VCs */ = {
 			isa = PBXGroup;
 			children = (
-				D2FDB7702912A6C900B5970F /* SignInViewController.swift */,
-				D2FDB7762913584000B5970F /* PhotoCollectionViewController.swift */,
-				D2FDB79E29138AA300B5970F /* WelcomViewController.swift */,
-				D2FDB7A029138AE600B5970F /* FriendTableVIewController.swift */,
-				D2FDB7A229138B5D00B5970F /* ProfileViewController.swift */,
-				D2FDB7A429138B9100B5970F /* SignUpViewController.swift */,
-				D2FDB7A629138C0E00B5970F /* KakaoTabbarController.swift */,
-				D2FDB7A829138D4D00B5970F /* ChatCollectionViewConroller.swift */,
+				D2FDB7FA2917D01600B5970F /* KakaoTabbarView */,
+				D2FDB7F92917CFFE00B5970F /* ChatView */,
+				D2FDB7F72917CFA600B5970F /* ProfileView */,
+				D2FDB7F62917CF8600B5970F /* FriendView */,
+				D2FDB7F52917CF7700B5970F /* PhotoView */,
+				D2FDB7F42917CF6F00B5970F /* WelcomeView */,
+				D2FDB7F32917CF6600B5970F /* SignUpView */,
+				D2FDB7F22917CF5200B5970F /* SignInView */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -213,6 +237,85 @@
 				D2FDB7252912A4C200B5970F /* SceneDelegate.swift */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		D2FDB7F22917CF5200B5970F /* SignInView */ = {
+			isa = PBXGroup;
+			children = (
+				D2FDB7702912A6C900B5970F /* SignInViewController.swift */,
+				D2FDB8152917EDE900B5970F /* SignInViewControllerLayout.swift */,
+			);
+			path = SignInView;
+			sourceTree = "<group>";
+		};
+		D2FDB7F32917CF6600B5970F /* SignUpView */ = {
+			isa = PBXGroup;
+			children = (
+				D2FDB7A429138B9100B5970F /* SignUpViewController.swift */,
+				D2FDB8122917EB7300B5970F /* SignUpViewControllerLayout.swift */,
+			);
+			path = SignUpView;
+			sourceTree = "<group>";
+		};
+		D2FDB7F42917CF6F00B5970F /* WelcomeView */ = {
+			isa = PBXGroup;
+			children = (
+				D2FDB79E29138AA300B5970F /* WelcomViewController.swift */,
+				D2FDB8102917EABE00B5970F /* WelcomeViewControllerLayout.swift */,
+			);
+			path = WelcomeView;
+			sourceTree = "<group>";
+		};
+		D2FDB7F52917CF7700B5970F /* PhotoView */ = {
+			isa = PBXGroup;
+			children = (
+				D2FDB7762913584000B5970F /* PhotoViewController.swift */,
+				D2FDB8042917DE0A00B5970F /* PhotoViewControllerLayout.swift */,
+				D2FDB80C2917EA5B00B5970F /* PhotoViewControllerDataSource.swift */,
+				D2FDB80E2917EA7B00B5970F /* PhotoViewControllerDelegate.swift */,
+			);
+			path = PhotoView;
+			sourceTree = "<group>";
+		};
+		D2FDB7F62917CF8600B5970F /* FriendView */ = {
+			isa = PBXGroup;
+			children = (
+				D2FDB7B12915F84B00B5970F /* MyProfileHeaderView.swift */,
+				D2FDB7A029138AE600B5970F /* FriendVIewController.swift */,
+				D2FDB8062917E81F00B5970F /* FriendViewControllerLayout.swift */,
+				D2FDB8082917E85500B5970F /* FriendViewControllerDelegate.swift */,
+				D2FDB80A2917E88200B5970F /* FriendViewControllerDataSource.swift */,
+			);
+			path = FriendView;
+			sourceTree = "<group>";
+		};
+		D2FDB7F72917CFA600B5970F /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				D2FDB7A229138B5D00B5970F /* ProfileViewController.swift */,
+				D2FDB8022917D90C00B5970F /* ProfileView.swift */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
+		D2FDB7F92917CFFE00B5970F /* ChatView */ = {
+			isa = PBXGroup;
+			children = (
+				D2FDB7A829138D4D00B5970F /* ChatViewConroller.swift */,
+				D2FDB7FB2917D12600B5970F /* ChatViewControllerLayout.swift */,
+				D2FDB7FE2917D75A00B5970F /* ChatViewControllerDelegate.swift */,
+				D2FDB8002917D76F00B5970F /* ChatViewControllerDataSource.swift */,
+			);
+			path = ChatView;
+			sourceTree = "<group>";
+		};
+		D2FDB7FA2917D01600B5970F /* KakaoTabbarView */ = {
+			isa = PBXGroup;
+			children = (
+				D2FDB7A629138C0E00B5970F /* KakaoTabbarController.swift */,
+				D2FDB8172917F28B00B5970F /* KakaoTabbarControllerDelegate.swift */,
+			);
+			path = KakaoTabbarView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,21 +461,34 @@
 			files = (
 				D2FDB7B22915F84C00B5970F /* MyProfileHeaderView.swift in Sources */,
 				D2FDB7242912A4C200B5970F /* AppDelegate.swift in Sources */,
+				D2FDB8132917EB7300B5970F /* SignUpViewControllerLayout.swift in Sources */,
 				D2FDB7A729138C0E00B5970F /* KakaoTabbarController.swift in Sources */,
 				D2FDB7732912B4EB00B5970F /* ChatCollectionViewCell.swift in Sources */,
+				D2FDB7FC2917D12600B5970F /* ChatViewControllerLayout.swift in Sources */,
 				D2FDB77B2913689C00B5970F /* PhotoCollectionViewCell.swift in Sources */,
+				D2FDB80B2917E88200B5970F /* FriendViewControllerDataSource.swift in Sources */,
 				D2FDB79F29138AA300B5970F /* WelcomViewController.swift in Sources */,
+				D2FDB8182917F28B00B5970F /* KakaoTabbarControllerDelegate.swift in Sources */,
 				D2FDB7712912A6C900B5970F /* SignInViewController.swift in Sources */,
+				D2FDB8072917E81F00B5970F /* FriendViewControllerLayout.swift in Sources */,
 				D2FDB7802913863000B5970F /* FriendViewCell.swift in Sources */,
+				D2FDB8112917EABE00B5970F /* WelcomeViewControllerLayout.swift in Sources */,
 				D2FDB799291389B500B5970F /* FriendModel.swift in Sources */,
-				D2FDB7772913584000B5970F /* PhotoCollectionViewController.swift in Sources */,
-				D2FDB7A929138D4D00B5970F /* ChatCollectionViewConroller.swift in Sources */,
+				D2FDB8092917E85500B5970F /* FriendViewControllerDelegate.swift in Sources */,
+				D2FDB7772913584000B5970F /* PhotoViewController.swift in Sources */,
+				D2FDB8162917EDE900B5970F /* SignInViewControllerLayout.swift in Sources */,
+				D2FDB80D2917EA5B00B5970F /* PhotoViewControllerDataSource.swift in Sources */,
+				D2FDB8052917DE0A00B5970F /* PhotoViewControllerLayout.swift in Sources */,
+				D2FDB7A929138D4D00B5970F /* ChatViewConroller.swift in Sources */,
 				D2FDB7A529138B9100B5970F /* SignUpViewController.swift in Sources */,
 				D2FDB7262912A4C200B5970F /* SceneDelegate.swift in Sources */,
-				D2FDB7A129138AE600B5970F /* FriendTableVIewController.swift in Sources */,
+				D2FDB8012917D76F00B5970F /* ChatViewControllerDataSource.swift in Sources */,
+				D2FDB7A129138AE600B5970F /* FriendVIewController.swift in Sources */,
+				D2FDB7FF2917D75A00B5970F /* ChatViewControllerDelegate.swift in Sources */,
+				D2FDB80F2917EA7B00B5970F /* PhotoViewControllerDelegate.swift in Sources */,
 				D2FDB7A329138B5D00B5970F /* ProfileViewController.swift in Sources */,
 				D2FDB79D291389C900B5970F /* PhotoModel.swift in Sources */,
-				D2FDB79B291389BF00B5970F /* ChatModel.swift in Sources */,
+				D2FDB8032917D90C00B5970F /* ProfileView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

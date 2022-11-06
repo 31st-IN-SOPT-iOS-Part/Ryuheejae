@@ -1,6 +1,6 @@
 import UIKit
 
-final class PhotoCollectionViewCell : UICollectionViewCell {
+final class PhotoCollectionViewCell: UICollectionViewCell {
     static let identifier = "PhotoCollectionViewCell"
     
     private var photos = [UIImage]()
@@ -34,7 +34,7 @@ final class PhotoCollectionViewCell : UICollectionViewCell {
                 photoImageView.layer.borderWidth = 5
                 photoImageView.layer.borderColor = UIColor.yellow.cgColor
                 imageIndexView.isHidden = false
-                imageIndexLabel.isHidden == false
+                imageIndexLabel.isHidden = false
                 
             } else {
                 photoImageView.layer.borderWidth = 0
@@ -62,8 +62,7 @@ extension PhotoCollectionViewCell {
         contentView.addSubview(photoImageView)
         
         contentView.snp.makeConstraints { make in
-            make.width.equalTo(119)
-            make.height.equalTo(119)
+            make.size.equalTo(119)
         }
         
         photoImageView.addSubview(imageIndexView)
@@ -76,8 +75,7 @@ extension PhotoCollectionViewCell {
         imageIndexView.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(4)
             make.leading.equalToSuperview().offset(97)
-            make.width.equalTo(18)
-            make.height.equalTo(18)
+            make.size.equalTo(18)
         }
         
         imageIndexLabel.snp.makeConstraints { make in
@@ -91,8 +89,8 @@ extension PhotoCollectionViewCell {
         
     }
     func dataBind(model: PhotoModel){
-        photoImageView.image = UIImage(named: model.photoImage)
-        imageIndexLabel.text = String(model.number)
+        photoImageView.image = UIImage(named: model.photoImage ?? " ")
+        //imageIndexLabel.text = String(model.number)
         
     }
     

@@ -7,7 +7,7 @@ import Then
 
 // MARK: - FriendTableViewCell
 
-final class FriendTableViewCell : UITableViewCell {
+final class FriendTableViewCell: UITableViewCell {
     
     // MARK: - Identifier
     
@@ -61,8 +61,7 @@ extension FriendTableViewCell {
         profileContainerView.snp.makeConstraints { make in
             make.top.equalToSuperview()
             make.leading.equalToSuperview().offset(15)
-            make.width.equalTo(50)
-            make.height.equalTo(50)
+            make.size.equalTo(50)
         }
         
         profileImageView.snp.makeConstraints { make in
@@ -85,6 +84,6 @@ extension FriendTableViewCell {
     func dataBind(model: FriendModel){
         name.text = model.name
         profileMessage.text = model.profileMessage
-        profileImageView.image = UIImage(named: model.profileImage)
+        profileImageView.image = UIImage(named: model.profileImage ?? "")
     }
 }

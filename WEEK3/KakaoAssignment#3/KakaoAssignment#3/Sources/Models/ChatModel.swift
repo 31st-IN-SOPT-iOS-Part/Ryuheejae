@@ -6,3 +6,4 @@ struct ChatModel {
     let profileImage : String
     let sendTime : String
 }
+

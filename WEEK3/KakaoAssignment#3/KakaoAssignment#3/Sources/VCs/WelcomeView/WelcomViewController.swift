@@ -5,7 +5,7 @@ import SnapKit
 class WelcomeViewController: UIViewController {
     
     // MARK: - nameLabel
-    private let nameLabel : UILabel = {
+    let nameLabel: UILabel = {
         let label = UILabel()
         label.text = "OOO님\n환영합니다"
         label.font = .systemFont(ofSize: 20, weight: .semibold)
@@ -15,7 +15,7 @@ class WelcomeViewController: UIViewController {
     }()
     
     // MARK: - checkButton
-    private lazy var checkButton : UIButton = {
+    lazy var checkButton: UIButton = {
         let button = UIButton()
         button.setTitle("확인", for: .normal)
         button.setTitleColor(.black, for: .normal)
@@ -35,7 +35,7 @@ class WelcomeViewController: UIViewController {
     }
     
     // MARK: - dataBind func
-    func dataBind(){
+    func dataBind() {
         guard let result = self.result else {return}
         nameLabel.text = "\(result)님\n환영합니다"
     }
@@ -46,7 +46,7 @@ class WelcomeViewController: UIViewController {
     
     // MARK: - presentToFriendTabViewController func
     // 2주차 생각과제 : https://duwjdtn11.tistory.com/523
-    private func presentToFriendTabViewController() {
+    func presentToFriendTabViewController() {
         let KakaoTabbarVC = KakaoTabbarController() // 루트 뷰를 대체할 FriendTabViewController() 생성
         KakaoTabbarVC.modalPresentationStyle = .fullScreen
         let sceneDeligate = UIApplication.shared.connectedScenes.first?.delegate as!SceneDelegate
@@ -61,35 +61,7 @@ class WelcomeViewController: UIViewController {
 }
 
 // MARK: - WelcomeViewController extension
-extension WelcomeViewController {
-    
-    // MARK: - layout func
-    private func layout(){
-        [nameLabel,checkButton].forEach{
-            view.addSubview($0)
-        }
-        
-        // MARK: - nameLabel AutoLayout
-        nameLabel.snp.makeConstraints{ make in
-            make.top.equalTo(self.view.safeAreaLayoutGuide).offset(197)
-            make.leading.equalTo(self.view.safeAreaLayoutGuide).offset(144)
-        }
-        
-        // MARK: - checkButton AutoLayout
-        checkButton.snp.makeConstraints{ make in
-            make.top.equalTo(self.nameLabel.snp.bottom).offset(117)
-            make.leading.equalTo(self.view.safeAreaLayoutGuide).offset(21)
-            make.width.equalTo(333)
-            make.height.equalTo(44)
-        }
-        
-    }
-    
-    // MARK: - setViewBackgroundColor func
-    private func setViewBackgroundColor() {
-        view.backgroundColor = .white
-    }
-}
+
     
     
 

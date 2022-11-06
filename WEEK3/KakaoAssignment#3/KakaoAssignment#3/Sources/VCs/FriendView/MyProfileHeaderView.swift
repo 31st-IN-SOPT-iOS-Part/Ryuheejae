@@ -23,14 +23,14 @@ class MyProfileHeaderView: UITableViewHeaderFooterView {
         $0.image = UIImage(named: "profileImg")
     }
     
-    private let myProfileNameLabel : UILabel = {
+    private let myProfileNameLabel: UILabel = {
         let label = UILabel()
         label.text = "김솝트"
         label.font = .systemFont(ofSize: 16, weight: .medium)
         return label
     }()
     
-    private let myProfileMsgLabel : UILabel = {
+    private let myProfileMsgLabel: UILabel = {
         let label = UILabel()
         label.text = "상태메시지는 여기에"
         label.font = .systemFont(ofSize: 11, weight: .light)

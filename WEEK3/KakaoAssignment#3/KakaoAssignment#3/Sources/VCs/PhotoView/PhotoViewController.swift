@@ -19,7 +19,7 @@ class PhotoCollectionViewController: UIViewController {
     
     // MARK: - recentFileLabel
     let recentFileLabel = UILabel().then {
-        $0.text = "최근 항목"
+        $0.text = I18N.Photo.recentFileLabel
         $0.textColor = .black
         $0.font = .systemFont(ofSize: 16, weight: .medium)
         
@@ -48,17 +48,6 @@ class PhotoCollectionViewController: UIViewController {
         collectionView.dataSource = self
         return collectionView
     }()
-    
-    
-    // MARK: - Constants
-    final let photoInset: UIEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 4, right: 4)
-    final let photoLineSpacing: CGFloat = 3
-    final let photoInterItemSpacing: CGFloat = 5
-    final let photoCellHeight: CGFloat = 119
-    
-    
-    
-    
     
     // MARK: - touchXButton func
     @objc

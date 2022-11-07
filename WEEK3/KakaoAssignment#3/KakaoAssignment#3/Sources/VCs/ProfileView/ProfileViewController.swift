@@ -3,9 +3,11 @@ import SnapKit
 
 // MARK: - ProfileViewController class
 class ProfileViewController: UIViewController {
+    var profileName: String?
+    var profileImage: String?
     
     // MARK: - xButton
-    let xButton: UIButton = {
+    let closeButton: UIButton = {
         let button = UIButton()
         button.setImage(UIImage(named: "closeBtn"), for: .normal)
         button.addTarget(self, action: #selector(touchXButton), for: .touchUpInside)
@@ -13,16 +15,17 @@ class ProfileViewController: UIViewController {
     }()
     
     // MARK: - profileImg
-    let profileImg: UIImageView = {
+    let profileImgView: UIImageView = {
         let imgView = UIImageView()
-        imgView.image = UIImage(named: "profileImg")
+        imgView.layer.cornerRadius = 20
+        imgView.clipsToBounds = true
         return imgView
     }()
     
     // MARK: - profileName
-    let profileName: UILabel = {
+    let profileNameLabel: UILabel = {
         let label = UILabel()
-        label.text = "류희재"
+        //label.text = "류희재"
         label.font = .systemFont(ofSize: 18, weight: .regular)
         label.textAlignment = .center
         label.textColor = .white
@@ -49,7 +52,7 @@ class ProfileViewController: UIViewController {
     // MARK: - chatMyselfLabel
     let chatMyselfLabel: UILabel = {
         let label = UILabel()
-        label.text = "나와의 채팅"
+        label.text = I18N.Profile.chatMyselfLabel
         label.font = .systemFont(ofSize: 10, weight: .regular)
         label.textAlignment = .center
         label.textColor = .white
@@ -66,7 +69,7 @@ class ProfileViewController: UIViewController {
     // MARK: - editProfileLabel
     let editProfileLabel: UILabel = {
         let label = UILabel()
-        label.text = "프로필 편집"
+        label.text = I18N.Profile.editProfileLabel
         label.font = .systemFont(ofSize: 10, weight: .regular)
         label.textAlignment = .center
         label.textColor = .white
@@ -83,12 +86,17 @@ class ProfileViewController: UIViewController {
     // MARK: - kakaoStoryLabel
     let kakaoStoryLabel: UILabel = {
         let label = UILabel()
-        label.text = "카카오스토리"
+        label.text = I18N.Profile.kakaoStoryLabel
         label.font = .systemFont(ofSize: 10, weight: .regular)
         label.textAlignment = .center
         label.textColor = .white
         return label
     }()
+    
+    func dataBindProfile(profileName: String, profileImage: String) {
+        profileNameLabel.text = profileName
+        profileImgView.image = UIImage(named: profileImage)
+    }
     
     // MARK: - viewDidLoad func
     override func viewDidLoad() {
@@ -106,4 +114,3 @@ class ProfileViewController: UIViewController {
     }
     
 }
-

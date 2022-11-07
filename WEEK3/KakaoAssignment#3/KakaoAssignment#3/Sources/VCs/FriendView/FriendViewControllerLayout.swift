@@ -3,7 +3,7 @@ extension FriendTabbleViewController {
     
     // MARK: - layout func
     func layout() {
-        [friendView, friendTableView, /*profileButton, profileName, profileMessage*/].forEach{
+        [friendView, friendTableView].forEach{
             view.addSubview($0)
         }
         
@@ -36,27 +36,9 @@ extension FriendTabbleViewController {
         // MARK: - settingIcon AutoLayout
         settingIcon.snp.makeConstraints{ make in
             make.top.equalTo(self.view.safeAreaLayoutGuide).offset(16)
-            make.leading.equalTo(self.friendLabel.snp.trailing).offset(4)
+            make.leading.equalTo(self.friendLabel.snp.trailing).offset(286)
             make.size.equalTo(21)
         }
-        
-        //        // MARK: - profileButton AutoLayout
-        //        profileButton.snp.makeConstraints{ make in
-        //            make.top.equalTo(self.friendView.snp.bottom).offset(15)
-        //            make.leading.equalToSuperview().offset(14)
-        //            make.width.equalTo(59)
-        //            make.height.equalTo(58)
-        //        }
-        //
-        //        profileName.snp.makeConstraints { make in
-        //            make.top.equalTo(self.profileButton).offset(10)
-        //            make.leading.equalTo(self.profileButton.snp.trailing).offset(3)
-        //        }
-        //
-        //        profileMessage.snp.makeConstraints { make in
-        //            make.top.equalTo(self.profileName.snp.bottom).offset(3)
-        //            make.leading.equalTo(self.profileName)
-        //        }
     }
     
     // MARK: - General Helpers

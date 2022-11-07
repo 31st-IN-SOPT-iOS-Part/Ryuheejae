@@ -7,7 +7,7 @@ class SignInViewController : UIViewController {
     // MARK: - startLabel
     let startLabel: UILabel = {
         let label = UILabel()
-        label.text = "카카오톡을 시작합니다"
+        label.text = I18N.Auth.authTitle
         label.font = .systemFont(ofSize: 22, weight: .medium)
         label.textAlignment = .left
         return label
@@ -16,7 +16,7 @@ class SignInViewController : UIViewController {
     // MARK: - describeLabel
     let describeLabel: UILabel = {
        let label = UILabel()
-        label.text = "사용하던 카카오계정이 있다면 \n 이메일 또는 전화번호로 로그인해 주세요"
+        label.text = I18N.Auth.loginDescription
         label.font = .systemFont(ofSize: 15, weight: .regular)
         label.textAlignment = .center
         label.textColor = .systemGray //color - 7d7e7d
@@ -27,9 +27,9 @@ class SignInViewController : UIViewController {
     // MARK: - emailTextfield
     let emailTextField: UITextField = {
        let textField  = UITextField()
-        textField.textColor = UIColor.black //#9f9e9f
+        textField.textColor = UIColor.loginGrayText
         textField.borderStyle = .none
-        textField.placeholder = "이메일 또는 전화번호"
+        textField.placeholder = I18N.Auth.idTextFieldPlaceholder
         textField.font = .systemFont(ofSize: 17)
         return textField
     }()
@@ -46,7 +46,7 @@ class SignInViewController : UIViewController {
        let textField  = UITextField()
         textField.borderStyle = .none
         textField.textColor = UIColor.black
-        textField.placeholder = "비밀번호"
+        textField.placeholder = I18N.Auth.passwordTextFieldPlaceholder
         textField.font = .systemFont(ofSize: 17)
         return textField
     }()
@@ -61,7 +61,7 @@ class SignInViewController : UIViewController {
     // MARK: - signInButton
     let signInButton: UIButton = {
         let button = UIButton()
-        button.setTitle("카카오계정으로 로그인", for: .normal)
+        button.setTitle(I18N.Auth.loginButton, for: .normal)
         button.setTitleColor(.black, for: .normal)
         button.backgroundColor = .systemGray6
         button.addTarget(self, action: #selector(touchupSignInButton), for: .touchUpInside)
@@ -71,7 +71,7 @@ class SignInViewController : UIViewController {
     // MARK: - signUpButton
     let signUpButton: UIButton = {
         let button = UIButton()
-        button.setTitle("새로운 카카오계정 만들기", for: .normal)
+        button.setTitle(I18N.Auth.signupButton, for: .normal)
         button.setTitleColor(.black, for: .normal)
         button.backgroundColor = .systemGray6
         button.addTarget(self, action: #selector(touchupSignUpButton), for: .touchUpInside)
@@ -81,7 +81,7 @@ class SignInViewController : UIViewController {
     // MARK: - findButton
     let findButton: UIButton = {
         let button = UIButton()
-        button.setTitle("카카오계정 또는 비밀번호 찾기", for: .normal)
+        button.setTitle(I18N.Auth.findLabel, for: .normal)
         button.setTitleColor(.black, for: .normal)
         button.titleLabel?.font = .systemFont(ofSize: 13, weight: .medium)
         button.titleLabel?.textAlignment = .center

@@ -18,7 +18,7 @@ class ChatCollectionViewController: UIViewController {
     // MARK: - chatLabel
     let chatLabel: UILabel =  {
         let label  = UILabel()
-        label.text = "채팅"
+        label.text = I18N.Chat.chatLabel
         label.textColor = .black
         label.font = .systemFont(ofSize: 22, weight: .semibold)
         return label
@@ -27,7 +27,7 @@ class ChatCollectionViewController: UIViewController {
     // MARK: - openChatLabel
     let openChatLabel: UILabel =  {
         let label  = UILabel()
-        label.text = "오픈채팅"
+        label.text = I18N.Chat.openChatLabel
         label.textColor = 0xA6A6A6.color
         label.font = .systemFont(ofSize: 22, weight: .semibold)
         return label

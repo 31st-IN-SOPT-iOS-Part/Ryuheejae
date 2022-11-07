@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D25BDD8629188413000695B6 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25BDD8529188413000695B6 /* UIColor+.swift */; };
+		D25BDD882918893D000695B6 /* StringLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25BDD872918893D000695B6 /* StringLiterals.swift */; };
 		D2FDB7242912A4C200B5970F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7232912A4C200B5970F /* AppDelegate.swift */; };
 		D2FDB7262912A4C200B5970F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7252912A4C200B5970F /* SceneDelegate.swift */; };
 		D2FDB72B2912A4C200B5970F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D2FDB7292912A4C200B5970F /* Main.storyboard */; };
@@ -66,6 +68,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D25BDD8529188413000695B6 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
+		D25BDD872918893D000695B6 /* StringLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringLiterals.swift; sourceTree = "<group>"; };
 		D2FDB7202912A4C200B5970F /* KakaoAssignment#3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KakaoAssignment#3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2FDB7232912A4C200B5970F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D2FDB7252912A4C200B5970F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -136,6 +140,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D25BDD82291883BD000695B6 /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				D25BDD84291883F5000695B6 /* Literal */,
+				D25BDD83291883E9000695B6 /* Extension */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		D25BDD83291883E9000695B6 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D25BDD8529188413000695B6 /* UIColor+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		D25BDD84291883F5000695B6 /* Literal */ = {
+			isa = PBXGroup;
+			children = (
+				D25BDD872918893D000695B6 /* StringLiterals.swift */,
+			);
+			path = Literal;
+			sourceTree = "<group>";
+		};
 		D2FDB7172912A4C200B5970F = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +188,7 @@
 		D2FDB7222912A4C200B5970F /* KakaoAssignment#3 */ = {
 			isa = PBXGroup;
 			children = (
+				D25BDD82291883BD000695B6 /* Global */,
 				D2FDB7AE2913929A00B5970F /* Resources */,
 				D2FDB7AA291391F200B5970F /* Sources */,
 				D2FDB7312912A4C400B5970F /* Info.plist */,
@@ -465,12 +495,14 @@
 				D2FDB7A729138C0E00B5970F /* KakaoTabbarController.swift in Sources */,
 				D2FDB7732912B4EB00B5970F /* ChatCollectionViewCell.swift in Sources */,
 				D2FDB7FC2917D12600B5970F /* ChatViewControllerLayout.swift in Sources */,
+				D25BDD882918893D000695B6 /* StringLiterals.swift in Sources */,
 				D2FDB77B2913689C00B5970F /* PhotoCollectionViewCell.swift in Sources */,
 				D2FDB80B2917E88200B5970F /* FriendViewControllerDataSource.swift in Sources */,
 				D2FDB79F29138AA300B5970F /* WelcomViewController.swift in Sources */,
 				D2FDB8182917F28B00B5970F /* KakaoTabbarControllerDelegate.swift in Sources */,
 				D2FDB7712912A6C900B5970F /* SignInViewController.swift in Sources */,
 				D2FDB8072917E81F00B5970F /* FriendViewControllerLayout.swift in Sources */,
+				D25BDD8629188413000695B6 /* UIColor+.swift in Sources */,
 				D2FDB7802913863000B5970F /* FriendViewCell.swift in Sources */,
 				D2FDB8112917EABE00B5970F /* WelcomeViewControllerLayout.swift in Sources */,
 				D2FDB799291389B500B5970F /* FriendModel.swift in Sources */,

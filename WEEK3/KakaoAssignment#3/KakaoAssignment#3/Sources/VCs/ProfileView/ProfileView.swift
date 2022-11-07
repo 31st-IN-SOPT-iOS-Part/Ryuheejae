@@ -3,7 +3,7 @@ extension ProfileViewController {
     
     // MARK: - layout func
     func layout() {
-        [xButton,profileImg,profileName,profileLine,funcView].forEach{
+        [closeButton,profileImgView,profileNameLabel,profileLine,funcView].forEach{
             view.addSubview($0)
         }
         
@@ -12,7 +12,7 @@ extension ProfileViewController {
         }
         
         // MARK: - xButton AutoLayout
-        xButton.snp.makeConstraints{ make in
+        closeButton.snp.makeConstraints{ make in
             make.top.equalTo(self.view.safeAreaLayoutGuide).offset(14)
             make.leading.equalTo(self.view.safeAreaLayoutGuide).offset(18)
             make.width.equalTo(13)
@@ -20,7 +20,7 @@ extension ProfileViewController {
         }
         
         // MARK: - profileImg AutoLayout
-        profileImg.snp.makeConstraints{ make in
+        profileImgView.snp.makeConstraints{ make in
             make.top.equalTo(self.view.safeAreaLayoutGuide).offset(470)
             make.leading.equalTo(self.view.safeAreaLayoutGuide).offset(139)
             make.width.equalTo(97)
@@ -28,14 +28,14 @@ extension ProfileViewController {
         }
         
         // MARK: - profileName AutoLayout
-        profileName.snp.makeConstraints{ make in
-            make.top.equalTo(self.profileImg.snp.bottom).offset(8)
+        profileNameLabel.snp.makeConstraints{ make in
+            make.top.equalTo(self.profileImgView.snp.bottom).offset(8)
             make.leading.equalTo(self.view.safeAreaLayoutGuide).offset(164)
         }
         
         // MARK: - profileLine AutoLayout
         profileLine.snp.makeConstraints{ make in
-            make.top.equalTo(self.profileName.snp.bottom).offset(42)
+            make.top.equalTo(self.profileNameLabel.snp.bottom).offset(42)
             make.width.equalTo(375)
             make.height.equalTo(1)
         }

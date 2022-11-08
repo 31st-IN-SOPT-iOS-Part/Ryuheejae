@@ -1,22 +1,20 @@
 import UIKit
 
 final class PhotoCollectionViewCell: UICollectionViewCell {
-    static let identifier = "PhotoCollectionViewCell"
     
-    private var photos = [UIImage]()
-    private var photoarray = [Int]()
+    static let identifier = "PhotoCollectionViewCell"
     
     private let photoImageView = UIImageView()
     
     private let imageIndexView = UIView().then {
-        $0.backgroundColor = .yellow
+        $0.backgroundColor = .imageBorder
         $0.layer.masksToBounds = true
         $0.layer.cornerRadius = 9
         $0.isHidden = true
         
     }
     
-    private let imageIndexLabel = UILabel().then {
+    let imageIndexLabel = UILabel().then {
         $0.textColor = .black
         $0.font = .systemFont(ofSize: 10, weight: .medium)
         $0.isHidden = true
@@ -28,21 +26,19 @@ final class PhotoCollectionViewCell: UICollectionViewCell {
         layout()
     }
     
-    override var isSelected: Bool{
-        didSet {
-            if isSelected {
-                photoImageView.layer.borderWidth = 5
-                photoImageView.layer.borderColor = UIColor.yellow.cgColor
-                imageIndexView.isHidden = false
-                imageIndexLabel.isHidden = false
-                
-            } else {
-                photoImageView.layer.borderWidth = 0
-                photoImageView.layer.borderColor = UIColor.clear.cgColor
-                imageIndexView.isHidden = true
-                imageIndexLabel.isHidden = true
-            }
-        }
+    // 사진이 선택됐을 때의 레이아웃
+    func selectedLayout() {
+        contentView.layer.borderWidth = 4
+        self.contentView.layer.borderColor = UIColor.imageBorder.cgColor
+        self.imageIndexView.isHidden = false
+        self.imageIndexLabel.isHidden = false
+    }
+    
+    // 사진 선택 해제
+    func deselectedLayout() {
+        self.contentView.layer.borderColor = UIColor.clear.cgColor
+        self.imageIndexView.isHidden = true
+        self.imageIndexLabel.isHidden = true
     }
     
     
@@ -79,19 +75,13 @@ extension PhotoCollectionViewCell {
         }
         
         imageIndexLabel.snp.makeConstraints { make in
-            make.top.equalToSuperview().offset(5)
-            make.leading.equalToSuperview().offset(7)
+            make.top.equalToSuperview().offset(4)
+            make.leading.equalToSuperview().offset(6)
         }
         
-//        photoSelectedView.snp.makeConstraints { make in
-//
-//        }
         
     }
     func dataBind(model: PhotoModel){
         photoImageView.image = UIImage(named: model.photoImage ?? " ")
-        //imageIndexLabel.text = String(model.number)
-        
     }
-    
 }

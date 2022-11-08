@@ -6,10 +6,10 @@ import Then
 
 class PhotoCollectionViewController: UIViewController {
     
+    
     // MARK: - topBarView
     let topBarView = UIView()
-    var photos = [UIImage]() // 사진을 담을 배열
-    var photoarray = [Int]() // 몇 번째 인덱스가 선택되었는지 담을 배열
+    public var selectedImageList: [Int] = []
     
     // MARK: - xButton
     let closeButton = UIButton().then {

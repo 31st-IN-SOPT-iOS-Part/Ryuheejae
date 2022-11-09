@@ -21,9 +21,4 @@ extension WelcomeViewController {
         }
         
     }
-    
-    // MARK: - setViewBackgroundColor func
-    func setViewBackgroundColor() {
-        view.backgroundColor = .white
-    }
 }

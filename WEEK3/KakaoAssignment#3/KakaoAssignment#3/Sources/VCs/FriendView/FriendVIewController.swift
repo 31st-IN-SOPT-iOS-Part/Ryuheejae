@@ -2,7 +2,7 @@ import UIKit
 import SnapKit
 
 // MARK: - FriendTabViewController class
-class FriendTabbleViewController: UIViewController {
+class FriendTabbleViewController: BaseViewController {
     
     // MARK: - friendView
     let friendView : UIView =  {

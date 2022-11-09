@@ -48,8 +48,6 @@ extension PhotoCollectionViewController {
             make.height.equalTo(calculateCellHeight())
             
         }
-        
-        view.backgroundColor = .white
     }
     
     func register() {

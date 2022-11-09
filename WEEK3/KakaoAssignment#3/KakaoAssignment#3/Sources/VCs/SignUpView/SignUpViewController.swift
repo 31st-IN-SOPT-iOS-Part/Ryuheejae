@@ -2,7 +2,7 @@ import UIKit
 import SnapKit
 
 // MARK: - SignUpViewController class
-class SignUpViewController: UIViewController {
+class SignUpViewController: BaseViewController {
     
     // MARK: - startLabel
     let startLabel: UILabel = {
@@ -77,7 +77,6 @@ class SignUpViewController: UIViewController {
     // MARK: - viewDidLoad func
     override func viewDidLoad() {
         super.viewDidLoad()
-        setViewBackgroundColor()
         layout()
     }
     
@@ -89,12 +88,18 @@ class SignUpViewController: UIViewController {
         
         WelcomeVC.modalPresentationStyle = .formSheet
         self.present(WelcomeVC,animated: true,completion: nil)
-       
+        
     }
     
     // MARK: - objc touchupSignUpButton func
     @objc
     private func touchupSignUpButton(){
+        let alert = UIAlertController(title: "Alert", message:
+                                        "AlertController", preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "네", style: .default, handler: nil)
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
         presentToWelcomeVC()
     }
 }

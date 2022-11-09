@@ -4,7 +4,7 @@ import SnapKit
 import SwiftyColor
 import Then
 
-class ChatCollectionViewController: UIViewController {
+class ChatCollectionViewController: BaseViewController {
     
     
     // MARK: - funcView

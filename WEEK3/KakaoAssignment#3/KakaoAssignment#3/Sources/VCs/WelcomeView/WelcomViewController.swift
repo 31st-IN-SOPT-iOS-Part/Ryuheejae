@@ -2,7 +2,7 @@ import UIKit
 import SnapKit
 
 // MARK: - WelcomeViewController class
-class WelcomeViewController: UIViewController {
+class WelcomeViewController: BaseViewController {
     
     // MARK: - nameLabel
     let nameLabel: UILabel = {
@@ -30,7 +30,6 @@ class WelcomeViewController: UIViewController {
     // MARK: - viewDidLoad func
     override func viewDidLoad() {
         super.viewDidLoad()
-        setViewBackgroundColor()
         layout()
     }
     
@@ -60,7 +59,7 @@ class WelcomeViewController: UIViewController {
     }
 }
 
-// MARK: - WelcomeViewController extension
+
 
     
     

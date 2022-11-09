@@ -101,11 +101,7 @@ class SignInViewController : BaseViewController {
     func presentToWelcomeVC(){
         let WelcomeVC = WelcomeViewController()
         
-        if (emailTextField.text == "") {
-            showToast(message: "아이드를 입력해주세요", font: .systemFont(ofSize: 10))
-        } else if (passwordTextField.text == "") {
-            showToast(message: "비밀번호를 입력해주세요", font: .systemFont(ofSize: 10))
-        } else {
+        if (isValidEmail(email: emailTextField.text ?? "") && isValidPassword(password: passwordTextField.text ?? "")) {
             if let email = emailTextField.text{ WelcomeVC.dataBind(result:email) }
             WelcomeVC.modalPresentationStyle = .formSheet
             self.present(WelcomeVC,animated: true,completion: nil)
@@ -118,23 +114,7 @@ class SignInViewController : BaseViewController {
         self.navigationController?.pushViewController(SignUpVC, animated: true)
     }
     
-    func showToast(message : String, font: UIFont) {
-        let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 75, y: self.view.frame.size.height-100, width: 150, height: 35))
-        toastLabel.backgroundColor = UIColor.black.withAlphaComponent(0.6)
-        toastLabel.textColor = UIColor.white
-        toastLabel.font = font
-        toastLabel.textAlignment = .center;
-        toastLabel.text = message
-        toastLabel.alpha = 1.0
-        toastLabel.layer.cornerRadius = 10;
-        toastLabel.clipsToBounds  =  true
-        self.view.addSubview(toastLabel)
-        UIView.animate(withDuration: 4.0, delay: 0.1, options: .curveEaseOut, animations: {
-            toastLabel.alpha = 0.0
-        }, completion: {(isCompleted) in
-            toastLabel.removeFromSuperview()
-        })
-    }
+    
     
     // MARK: - @objc touchupSignInButton func
     @objc

@@ -3,9 +3,7 @@ extension SignInViewController {
     
     // MARK: - layout func
     func layout(){
-        [startLabel,describeLabel,emailTextField,emailLine, passwordTextField,passwordLine,signInButton,signUpButton,findButton].forEach{
-            view.addSubview($0)
-        }
+        view.addSubviews(startLabel,describeLabel,emailTextField,emailLine, passwordTextField,passwordLine,signInButton,signUpButton,findButton)
         
         // MARK: - startLabel AutoLayout
         startLabel.snp.makeConstraints{ make in

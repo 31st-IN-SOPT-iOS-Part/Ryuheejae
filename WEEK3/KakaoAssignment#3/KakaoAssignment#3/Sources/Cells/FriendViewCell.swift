@@ -17,8 +17,7 @@ final class FriendTableViewCell: UITableViewCell {
     private let profileContainerView = UIView()
     
     private let profileImageView = UIImageView().then {
-        $0.layer.cornerRadius = 17
-        $0.clipsToBounds = true
+        $0.makeCornerRound(radius:17)
     }
     
     private let name = UILabel().then {

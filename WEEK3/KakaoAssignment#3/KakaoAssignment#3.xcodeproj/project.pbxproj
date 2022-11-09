@@ -12,6 +12,7 @@
 		D22BA837291B548A00005597 /* ShopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22BA836291B548A00005597 /* ShopViewController.swift */; };
 		D22BA839291B54A400005597 /* SharpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22BA838291B54A400005597 /* SharpViewController.swift */; };
 		D22BA83B291B56A700005597 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22BA83A291B56A700005597 /* UIView+.swift */; };
+		D22BA83D291B580800005597 /* UIViewController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D22BA83C291B580800005597 /* UIViewController+.swift */; };
 		D25BDD8629188413000695B6 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25BDD8529188413000695B6 /* UIColor+.swift */; };
 		D25BDD882918893D000695B6 /* StringLiterals.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25BDD872918893D000695B6 /* StringLiterals.swift */; };
 		D2FDB7242912A4C200B5970F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FDB7232912A4C200B5970F /* AppDelegate.swift */; };
@@ -78,6 +79,7 @@
 		D22BA836291B548A00005597 /* ShopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopViewController.swift; sourceTree = "<group>"; };
 		D22BA838291B54A400005597 /* SharpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharpViewController.swift; sourceTree = "<group>"; };
 		D22BA83A291B56A700005597 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		D22BA83C291B580800005597 /* UIViewController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+.swift"; sourceTree = "<group>"; };
 		D25BDD8529188413000695B6 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		D25BDD872918893D000695B6 /* StringLiterals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringLiterals.swift; sourceTree = "<group>"; };
 		D2FDB7202912A4C200B5970F /* KakaoAssignment#3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "KakaoAssignment#3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -188,6 +190,7 @@
 			children = (
 				D25BDD8529188413000695B6 /* UIColor+.swift */,
 				D22BA83A291B56A700005597 /* UIView+.swift */,
+				D22BA83C291B580800005597 /* UIViewController+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -564,6 +567,7 @@
 				D2FDB80F2917EA7B00B5970F /* PhotoViewController + Delegate.swift in Sources */,
 				D2FDB7A329138B5D00B5970F /* ProfileViewController.swift in Sources */,
 				D2FDB79D291389C900B5970F /* PhotoModel.swift in Sources */,
+				D22BA83D291B580800005597 /* UIViewController+.swift in Sources */,
 				D2FDB8032917D90C00B5970F /* ProfileView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,11 +1,11 @@
 // MARK: - SignUpViewController extension
 extension SignUpViewController {
-
+    
     // MARK: - layout func
     func layout(){
-        [startLabel,emailTextField,emailLine,passwordTextField,passwordLine,signUpButton,checkPasswordLine,checkPasswordTextField].forEach{
-            view.addSubview($0)
-        }
+        view.addSubviews(startLabel,emailTextField,emailLine,passwordTextField,passwordLine,
+                         signUpButton,checkPasswordLine,checkPasswordTextField)
+        
         
         // MARK: - startLabel AutoLayout
         startLabel.snp.makeConstraints{ make in

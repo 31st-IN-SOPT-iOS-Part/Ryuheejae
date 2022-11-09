@@ -83,23 +83,24 @@ class SignUpViewController: BaseViewController {
     // MARK: - presentToWelcomeVC func
     func presentToWelcomeVC(){
         let WelcomeVC = WelcomeViewController()
+        if(isValidEmail(email: emailTextField.text!) &&
+           isValidPassword(password: passwordTextField.text!) &&
+           isValidCheckPassword(password: passwordTextField.text!, checkingPassword: checkPasswordTextField.text!)
+        ){
+            if let email = emailTextField.text{ WelcomeVC.dataBind(result:email) }
+            WelcomeVC.modalPresentationStyle = .formSheet
+            self.present(WelcomeVC,animated: true,completion: nil)
+            
+        }
         
-        if let email = emailTextField.text{ WelcomeVC.dataBind(result:email) }
-        
-        WelcomeVC.modalPresentationStyle = .formSheet
-        self.present(WelcomeVC,animated: true,completion: nil)
         
     }
+    
+    
     
     // MARK: - objc touchupSignUpButton func
     @objc
     private func touchupSignUpButton(){
-        let alert = UIAlertController(title: "Alert", message:
-                                        "AlertController", preferredStyle: .alert)
-        
-        let action = UIAlertAction(title: "네", style: .default, handler: nil)
-        alert.addAction(action)
-        present(alert, animated: true, completion: nil)
         presentToWelcomeVC()
     }
 }

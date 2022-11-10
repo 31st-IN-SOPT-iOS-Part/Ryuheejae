@@ -4,6 +4,8 @@ import UIKit
 // MARK: - SignInViewController class
 class SignInViewController : BaseViewController {
     
+    lazy var containerView: UIScrollView = UIScrollView()
+    
     // MARK: - startLabel
     let startLabel: UILabel = {
         let label = UILabel()

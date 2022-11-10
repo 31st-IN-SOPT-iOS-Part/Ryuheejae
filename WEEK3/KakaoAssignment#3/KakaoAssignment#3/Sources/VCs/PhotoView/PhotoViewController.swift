@@ -6,6 +6,7 @@ import Then
 
 class PhotoCollectionViewController: BaseViewController {
     
+    lazy var containerView: UIView = UIView()
     
     // MARK: - topBarView
     let topBarView = UIView()

@@ -4,6 +4,9 @@ import SnapKit
 // MARK: - SignUpViewController class
 class SignUpViewController: BaseViewController {
     
+    lazy var containerView: UIScrollView = UIScrollView()
+    
+    
     // MARK: - startLabel
     let startLabel: UILabel = {
         let label = UILabel()

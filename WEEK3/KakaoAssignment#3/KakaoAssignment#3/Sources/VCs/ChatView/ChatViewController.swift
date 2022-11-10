@@ -6,6 +6,7 @@ import Then
 
 class ChatCollectionViewController: BaseViewController {
     
+    lazy var containerView: UIView = UIView()
     
     // MARK: - funcView
     let funcView: UIView =  {

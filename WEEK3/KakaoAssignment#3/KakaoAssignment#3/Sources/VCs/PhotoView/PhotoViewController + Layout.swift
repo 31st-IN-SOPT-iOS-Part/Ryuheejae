@@ -5,12 +5,18 @@ extension PhotoCollectionViewController {
     
     // MARK: - layout()
     func layout() {
-        [topBarView,PhotoCollectionView].forEach {
-            view.addSubview($0)
-        }
         
-        [closeButton, recentFileLabel, sendButton].forEach {
-            topBarView.addSubview($0)
+        view.addSubview(containerView)
+        
+        let contentComponent: [UIView] = [topBarView, PhotoCollectionView]
+        let topBarComponent: [UIView] = [closeButton, recentFileLabel, sendButton]
+        
+        view.addSubviews(contentComponent)
+        topBarView.addSubviews(topBarComponent)
+        
+        
+        containerView.snp.makeConstraints { make in
+            make.edges.equalTo(self.view.safeAreaLayoutGuide)
         }
         
         // MARK: - topBarView

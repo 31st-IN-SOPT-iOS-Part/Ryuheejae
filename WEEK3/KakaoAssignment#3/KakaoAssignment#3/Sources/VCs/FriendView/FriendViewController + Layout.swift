@@ -1,14 +1,21 @@
+import UIKit
+
 // MARK: - FriendTabViewController extension
 extension FriendTabbleViewController {
     
     // MARK: - layout func
     func layout() {
-        [friendView, friendTableView].forEach{
-            view.addSubview($0)
-        }
         
-        [friendLabel,settingIcon].forEach{
-            friendView.addSubview($0)
+        view.addSubview(containerView)
+        
+        let contentComponent: [UIView] = [friendView, friendTableView]
+        containerView.addSubviews(contentComponent)
+        
+        let friendViewComponent: [UIView] = [friendLabel,settingIcon]
+        friendView.addSubviews(friendViewComponent)
+        
+        containerView.snp.makeConstraints { make in
+            make.edges.equalTo(self.view.safeAreaLayoutGuide)
         }
         
         // MARK: - friendView AutoLayout

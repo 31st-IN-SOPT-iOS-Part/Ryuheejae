@@ -1,11 +1,21 @@
+
+import UIKit
+
 // MARK: - SignUpViewController extension
 extension SignUpViewController {
     
     // MARK: - layout func
     func layout(){
-        view.addSubviews(startLabel,emailTextField,emailLine,passwordTextField,passwordLine,
-                         signUpButton,checkPasswordLine,checkPasswordTextField)
         
+        view.addSubview(containerView)
+        let contentComponent: [UIView] = [startLabel,emailTextField,emailLine,passwordTextField,passwordLine,
+                                          signUpButton,checkPasswordLine,checkPasswordTextField]
+        view.addSubviews(contentComponent)
+        
+        
+        containerView.snp.makeConstraints { make in
+            make.edges.equalTo(self.view.safeAreaLayoutGuide)
+        }
         
         // MARK: - startLabel AutoLayout
         startLabel.snp.makeConstraints{ make in

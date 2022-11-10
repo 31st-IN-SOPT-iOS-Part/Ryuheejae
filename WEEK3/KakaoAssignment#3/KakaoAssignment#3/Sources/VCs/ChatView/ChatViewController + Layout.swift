@@ -3,14 +3,17 @@ extension ChatCollectionViewController {
     
     // MARK: - layout func
     func layout() {
-
-        [funcView,userPoster,chatCollectionView].forEach {
-            view.addSubview($0)
-        }
-
-
-        [chatLabel, openChatLabel, plusIcon, settingIcon].forEach {
-            funcView.addSubview($0)
+        
+        view.addSubview(containerView)
+        
+        let contentComponent: [UIView] = [funcView,userPoster,chatCollectionView]
+        containerView.addSubviews(contentComponent)
+        
+        let funcViewComponent: [UIView] = [chatLabel, openChatLabel, plusIcon, settingIcon]
+        funcView.addSubviews(funcViewComponent)
+        
+        containerView.snp.makeConstraints { make in
+            make.edges.equalTo(self.view.safeAreaLayoutGuide)
         }
 
         funcView.snp.makeConstraints { make in

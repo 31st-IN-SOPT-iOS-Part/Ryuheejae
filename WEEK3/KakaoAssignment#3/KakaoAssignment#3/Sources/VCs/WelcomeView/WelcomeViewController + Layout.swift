@@ -1,11 +1,15 @@
+import UIKit
 extension WelcomeViewController {
     
     // MARK: - layout func
     func layout(){
-        [nameLabel,checkButton].forEach{
-            view.addSubview($0)
-        }
+        view.addSubview(containerView)
+        let contentComponent: [UIView] = [nameLabel,checkButton]
+        containerView.addSubviews(contentComponent)
         
+        containerView.snp.makeConstraints { make in
+            make.edges.equalTo(self.view.safeAreaLayoutGuide)
+        }
         // MARK: - nameLabel AutoLayout
         nameLabel.snp.makeConstraints{ make in
             make.top.equalTo(self.view.safeAreaLayoutGuide).offset(197)
@@ -20,10 +24,5 @@ extension WelcomeViewController {
             make.height.equalTo(44)
         }
         
-    }
-    
-    // MARK: - setViewBackgroundColor func
-    func setViewBackgroundColor() {
-        view.backgroundColor = .white
     }
 }

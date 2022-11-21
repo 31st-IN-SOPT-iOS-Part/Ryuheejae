@@ -4,8 +4,9 @@ import SnapKit
 import SwiftyColor
 import Then
 
-class PhotoCollectionViewController: UIViewController {
+class PhotoCollectionViewController: BaseViewController {
     
+    lazy var containerView: UIView = UIView()
     
     // MARK: - topBarView
     let topBarView = UIView()

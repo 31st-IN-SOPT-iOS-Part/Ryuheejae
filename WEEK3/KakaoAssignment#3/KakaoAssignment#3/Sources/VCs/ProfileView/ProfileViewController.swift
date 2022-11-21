@@ -6,6 +6,8 @@ class ProfileViewController: UIViewController {
     var profileName: String?
     var profileImage: String?
     
+    lazy var containerView: UIView = UIView()
+    
     // MARK: - xButton
     let closeButton: UIButton = {
         let button = UIButton()

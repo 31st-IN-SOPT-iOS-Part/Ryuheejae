@@ -17,8 +17,7 @@ final class ChatCollectionViewCell: UICollectionViewCell {
     private let profileContainerView = UIView()
     
     private let profileImageView = UIImageView().then {
-        $0.layer.cornerRadius = 17
-        $0.clipsToBounds = true
+        $0.makeCornerRound(radius:17)
     }
     
     private let nameLabel = UILabel().then {
@@ -80,7 +79,7 @@ extension ChatCollectionViewCell {
             make.top.equalToSuperview().offset(10)
             make.leading.equalTo(self.profileContainerView.snp.trailing).offset(3)
         }
- 
+        
         profileMessage.snp.makeConstraints { make in
             make.top.equalTo(self.nameLabel.snp.bottom).offset(3)
             make.leading.equalTo(self.nameLabel)

@@ -33,8 +33,3 @@ class KakaoTabbarController: UITabBarController {
 }
 
 
-
-class MoreViewController : UIViewController {}
-class ShopViewController : UIViewController {}
-class SharpViewController : UIViewController {}
-

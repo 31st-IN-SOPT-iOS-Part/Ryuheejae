@@ -1,14 +1,22 @@
 // MARK: - ProfileViewController extension
+
+import UIKit
 extension ProfileViewController {
     
     // MARK: - layout func
     func layout() {
-        [closeButton,profileImgView,profileNameLabel,profileLine,funcView].forEach{
-            view.addSubview($0)
-        }
+        view.addSubview(containerView)
         
-        [chatMyselfButton,chatMyselfLabel,editProfileButton,editProfileLabel,kakaoStoryButton,kakaoStoryLabel].forEach{
-            funcView.addSubview($0)
+        let contentComponent: [UIView] = [closeButton,profileImgView,profileNameLabel,profileLine,funcView]
+        containerView.addSubviews(contentComponent)
+        
+        let funcViewComponent: [UIView] = [chatMyselfButton,chatMyselfLabel,editProfileButton,
+                                           editProfileLabel,kakaoStoryButton,kakaoStoryLabel]
+        funcView.addSubviews(funcViewComponent)
+        
+        
+        containerView.snp.makeConstraints { make in
+            make.edges.equalTo(self.view.safeAreaLayoutGuide)
         }
         
         // MARK: - xButton AutoLayout

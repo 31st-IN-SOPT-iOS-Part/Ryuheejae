@@ -7,9 +7,7 @@ final class PhotoCollectionViewCell: UICollectionViewCell {
     private let photoImageView = UIImageView()
     
     private let imageIndexView = UIView().then {
-        $0.backgroundColor = .imageBorder
-        $0.layer.masksToBounds = true
-        $0.layer.cornerRadius = 9
+        $0.makeCornerRound(radius: 9)
         $0.isHidden = true
         
     }

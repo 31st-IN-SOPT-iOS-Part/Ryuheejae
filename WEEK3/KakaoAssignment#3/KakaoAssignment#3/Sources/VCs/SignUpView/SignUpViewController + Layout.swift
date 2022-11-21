@@ -1,10 +1,20 @@
-// MARK: - SignInViewController extension
-extension SignInViewController {
+
+import UIKit
+
+// MARK: - SignUpViewController extension
+extension SignUpViewController {
     
     // MARK: - layout func
     func layout(){
-        [startLabel,describeLabel,emailTextField,emailLine, passwordTextField,passwordLine,signInButton,signUpButton,findButton].forEach{
-            view.addSubview($0)
+        
+        view.addSubview(containerView)
+        let contentComponent: [UIView] = [startLabel,emailTextField,emailLine,passwordTextField,passwordLine,
+                                          signUpButton,checkPasswordLine,checkPasswordTextField]
+        view.addSubviews(contentComponent)
+        
+        
+        containerView.snp.makeConstraints { make in
+            make.edges.equalTo(self.view.safeAreaLayoutGuide)
         }
         
         // MARK: - startLabel AutoLayout
@@ -13,15 +23,9 @@ extension SignInViewController {
             make.leading.equalTo(self.view.safeAreaLayoutGuide).offset(89)
         }
         
-        // MARK: - describeLabel AutoLayout
-        describeLabel.snp.makeConstraints{ make in
-            make.top.equalTo(self.startLabel.snp.bottom).offset(20)
-            make.leading.equalTo(self.view.safeAreaLayoutGuide).offset(67)
-        }
-        
-        // MARK: - emailTextfield AutoLayout
+        // MARK: - emailTextField AutoLayout
         emailTextField.snp.makeConstraints{ make in
-            make.top.equalTo(self.describeLabel.snp.bottom).offset(50)
+            make.top.equalTo(self.startLabel).offset(119)
             make.leading.equalTo(self.view.safeAreaLayoutGuide).offset(21)
             make.width.equalTo(333)
             make.height.equalTo(49)
@@ -35,9 +39,9 @@ extension SignInViewController {
             make.height.equalTo(1)
         }
         
-        // MARK: - passwordTextfield AutoLayout
+        // MARK: - passwordTextField AutoLayout
         passwordTextField.snp.makeConstraints{ make in
-            make.top.equalTo(self.emailTextField.snp.bottom).offset(10)
+            make.top.equalTo(self.emailLine).offset(10)
             make.leading.equalTo(self.view.safeAreaLayoutGuide).offset(21)
             make.width.equalTo(333)
             make.height.equalTo(49)
@@ -51,31 +55,35 @@ extension SignInViewController {
             make.height.equalTo(1)
         }
         
-        // MARK: - signInButton AutoLayout
-        signInButton.snp.makeConstraints{ make in
-            make.top.equalTo(self.passwordTextField.snp.bottom).offset(35)
+        // MARK: - checkPasswordTextField AutoLayout
+        checkPasswordTextField.snp.makeConstraints{ make in
+            make.top.equalTo(self.passwordLine).offset(10)
             make.leading.equalTo(self.view.safeAreaLayoutGuide).offset(21)
             make.width.equalTo(333)
-            make.height.equalTo(44)
+            make.height.equalTo(49)
+            
+        }
+        
+        // MARK: - checkPasswordLine AutoLayout
+        checkPasswordLine.snp.makeConstraints{ make in
+            make.top.equalTo(self.checkPasswordTextField.snp.bottom)
+            make.leading.equalTo(self.checkPasswordTextField)
+            make.width.equalTo(333)
+            make.height.equalTo(1)
+            
         }
         
         // MARK: - signUpButton AutoLayout
         signUpButton.snp.makeConstraints{ make in
-            make.top.equalTo(self.signInButton.snp.bottom).offset(10)
-            make.leading.equalTo(self.view.safeAreaLayoutGuide).offset(21)
+            make.top.equalTo(self.checkPasswordLine.snp.bottom).offset(26)
+            make.leading.equalTo(self.emailTextField)
             make.width.equalTo(333)
             make.height.equalTo(44)
-        }
-        
-        // MARK: - findButton AutoLayout
-        findButton.snp.makeConstraints{ make in
-            make.top.equalTo(self.signUpButton.snp.bottom).offset(15)
-            make.leading.equalTo(self.view.safeAreaLayoutGuide).offset(99)
         }
     }
     
     // MARK: - setViewBackgroundColor func
-    private func setViewBackgroundColor() {
+    func setViewBackgroundColor() {
         view.backgroundColor = .white
     }
 }

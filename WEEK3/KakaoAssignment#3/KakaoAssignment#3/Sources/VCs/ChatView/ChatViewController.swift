@@ -4,8 +4,9 @@ import SnapKit
 import SwiftyColor
 import Then
 
-class ChatCollectionViewController: UIViewController {
+class ChatCollectionViewController: BaseViewController {
     
+    lazy var containerView: UIView = UIView()
     
     // MARK: - funcView
     let funcView: UIView =  {

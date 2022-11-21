@@ -2,7 +2,9 @@ import UIKit
 import SnapKit
 
 // MARK: - FriendTabViewController class
-class FriendTabbleViewController: UIViewController {
+class FriendTabbleViewController: BaseViewController {
+    
+    lazy var containerView: UIView = UIView()
     
     // MARK: - friendView
     let friendView : UIView =  {

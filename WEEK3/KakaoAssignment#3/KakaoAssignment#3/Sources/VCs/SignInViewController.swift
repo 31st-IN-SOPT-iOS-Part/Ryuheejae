@@ -2,8 +2,10 @@ import SnapKit
 import UIKit
 
 // MARK: - SignInViewController class
-class SignInViewController : UIViewController {
-
+class SignInViewController : BaseViewController {
+    
+    lazy var containerView: UIScrollView = UIScrollView()
+    
     // MARK: - startLabel
     let startLabel: UILabel = {
         let label = UILabel()
@@ -15,7 +17,7 @@ class SignInViewController : UIViewController {
     
     // MARK: - describeLabel
     let describeLabel: UILabel = {
-       let label = UILabel()
+        let label = UILabel()
         label.text = I18N.Auth.loginDescription
         label.font = .systemFont(ofSize: 15, weight: .regular)
         label.textAlignment = .center
@@ -26,7 +28,7 @@ class SignInViewController : UIViewController {
     
     // MARK: - emailTextfield
     let emailTextField: UITextField = {
-       let textField  = UITextField()
+        let textField  = UITextField()
         textField.textColor = UIColor.loginGrayText
         textField.borderStyle = .none
         textField.placeholder = I18N.Auth.idTextFieldPlaceholder
@@ -40,10 +42,10 @@ class SignInViewController : UIViewController {
         line.backgroundColor = .systemGray4 //#a09fa0
         return line
     }()
-
+    
     // MARK: - passwordTextfield
     let passwordTextField: UITextField = {
-       let textField  = UITextField()
+        let textField  = UITextField()
         textField.borderStyle = .none
         textField.textColor = UIColor.black
         textField.placeholder = I18N.Auth.passwordTextFieldPlaceholder
@@ -57,7 +59,7 @@ class SignInViewController : UIViewController {
         line.backgroundColor = .systemGray4
         return line
     }()
-
+    
     // MARK: - signInButton
     let signInButton: UIButton = {
         let button = UIButton()
@@ -94,7 +96,6 @@ class SignInViewController : UIViewController {
     // MARK: - viewDidLoad func
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .white
         layout()
     }
     
@@ -102,10 +103,11 @@ class SignInViewController : UIViewController {
     func presentToWelcomeVC(){
         let WelcomeVC = WelcomeViewController()
         
-        if let email = emailTextField.text{ WelcomeVC.dataBind(result:email) }
-        
-        WelcomeVC.modalPresentationStyle = .formSheet
-        self.present(WelcomeVC,animated: true,completion: nil)
+        if (isValidEmail(email: emailTextField.text ?? "") && isValidPassword(password: passwordTextField.text ?? "")) {
+            if let email = emailTextField.text{ WelcomeVC.dataBind(result:email) }
+            WelcomeVC.modalPresentationStyle = .formSheet
+            self.present(WelcomeVC,animated: true,completion: nil)
+        }
     }
     
     // MARK: - pushToSignUpVC func
@@ -113,6 +115,8 @@ class SignInViewController : UIViewController {
         let SignUpVC = SignUpViewController()
         self.navigationController?.pushViewController(SignUpVC, animated: true)
     }
+    
+    
     
     // MARK: - @objc touchupSignInButton func
     @objc
